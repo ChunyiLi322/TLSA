@@ -1,215 +1,128 @@
-# Deep Learning for Multi-Label Text Classification
+# few-shot-text-classification
 
-[![Python Version](https://img.shields.io/badge/language-python3.6-blue.svg)](https://www.python.org/downloads/) [![Build Status](https://travis-ci.org/RandolphVI/Multi-Label-Text-Classification.svg?branch=master)](https://travis-ci.org/RandolphVI/Multi-Label-Text-Classification) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/c45aac301b244316830b00b9b0985e3e)](https://www.codacy.com/app/chinawolfman/Multi-Label-Text-Classification?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=RandolphVI/Multi-Label-Text-Classification&amp;utm_campaign=Badge_Grade) [![License](https://img.shields.io/github/license/RandolphVI/Multi-Label-Text-Classification.svg)](https://www.apache.org/licenses/LICENSE-2.0) [![Issues](https://img.shields.io/github/issues/RandolphVI/Multi-Label-Text-Classification.svg)](https://github.com/RandolphVI/Multi-Label-Text-Classification/issues)
+Few-shot binary text classification with Induction Networks and Word2Vec weights initialization
 
-This repository is my research project, and it is also a study of TensorFlow, Deep Learning (Fasttext, CNN, LSTM, etc.).
+## Reference
 
-The main objective of the project is to solve the multi-label text classification problem based on Deep Neural Networks. Thus, the format of the data label is like [0, 1, 0, ..., 1, 1] according to the characteristics of such a problem.
+This is an PyTorch implementation of IJCNLP 2019 paper [Induction Networks for Few-Shot Text Classification](https://arxiv.org/abs/1902.10482v2).
 
-## Requirements
+## Few-shot Classification
 
-- Python 3.6
-- Tensorflow 1.15.0
-- Tensorboard 1.15.0
-- Sklearn 0.19.1
-- Numpy 1.16.2
-- Gensim 3.8.3
-- Tqdm 4.49.0
+* Few-shot classification is a task in which a classifier must be adapted 
+to accommodate new classes not seen in training, 
+given only a few examples of each of these new classes. 
+* There is a large labeled training set with a set of classes. 
+However, after training, the ultimate goal is to produce classifiers 
+on the test set (a disjoint set of new classes), 
+for which only a small labeled support set will be available. 
+* If the support set contains K labeled examples for each of the C unique classes, 
+the target few-shot problem is called __C-way K-shot problem__. 
+* Usually, the K is too small to train a supervised classification model. 
+Therefore meta-learning on the training set is necessary, 
+in order to extract transferable knowledge 
+that will help classify the test set more successfully.
 
-## Project
+## Prerequisites
 
-The project structure is below:
-
-```text
-.
-├── Model
-│   ├── test_model.py
-│   ├── text_model.py
-│   └── train_model.py
-├── data
-│   ├── word2vec_100.model.* [Need Download]
-│   ├── Test_sample.json
-│   ├── Train_sample.json
-│   └── Validation_sample.json
-└── utils
-│   ├── checkmate.py
-│   ├── data_helpers.py
-│   └── param_parser.py
-├── LICENSE
-├── README.md
-└── requirements.txt
+* Install the required packages by:
+```
+pip install -r requirements.txt
 ```
 
+## Parameters
 
+* All the parameters are defined in `config.ini`.
+* `configparser` is used to parse the parameters.
 
-## Innovation
+## Dataset: Amazon Review Sentiment Classification (ARSC)
 
-### Data part
-1. Make the data support **Chinese** and English (Can use `jieba` or `nltk` ).
-2. Can use **your pre-trained word vectors** (Can use `gensim`). 
-3. Add embedding visualization based on the **tensorboard** (Need to create `metadata.tsv` first).
+This dataset comes from NAACL 2018 paper [Diverse Few-Shot Text Classification with Multiple Metrics](https://arxiv.org/abs/1805.07513v1).
 
-### Model part
-1. Add the correct **L2 loss** calculation operation.
-2. Add **gradients clip** operation to prevent gradient explosion.
-3. Add **learning rate decay** with exponential decay.
-4. Add a new **Highway Layer** (Which is useful according to the model performance).
-5. Add **Batch Normalization Layer**.
+* The dataset comprises English reviews for 23 types of products
+on Amazon. 
+* For each product domain, there are three
+different binary classification tasks. These buckets then form
+23 x 3 = 69 tasks in total. 
+* 4 x 3 = 12 tasks from 4 test domains (Books, DVD, Electronics and Kitchen) are selected as test set, 
+and there are only 5 examples as support set for each labels in the test set. There other 19 domains are train domains.
+ 
+| Train Tasks | Dev Tasks|Test Tasks|
+| ------| ------|------|
+| 19 * 3 = 57 | 4 * 3 = 12 |4 * 3 = 12 |
 
-### Code part
-1. Can choose to **train** the model directly or **restore** the model from the checkpoint in `train.py`.
-2. Can predict the labels via **threshold** and **top-K** in `train.py` and `test.py`.
-3. Can calculate the evaluation metrics --- **AUC** & **AUPRC**.
-4. Can create the prediction file which including the predicted values and predicted labels of the Testset data in `test.py`.
-5. Add other useful data preprocess functions in `data_helpers.py`.
-6. Use `logging` for helping to record the whole info (including **parameters display**, **model training info**, etc.).
-7. Provide the ability to save the best n checkpoints in `checkmate.py`, whereas the `tf.train.Saver` can only save the last n checkpoints.
+* Therefore, __2-way 5-shot__ learning model is needed to classify this dataset.
 
-## Data
+### Download
 
-See data format in `/data` folder which including the data sample files. For example:
+* Download [Gorov/DiverseFewShot_Amazon](https://github.com/Gorov/DiverseFewShot_Amazon)
+* The text files are in `Amazon_few_shot` folder.
 
-```json
-{"testid": "3935745", "features_content": ["pore", "water", "pressure", "metering", "device", "incorporating", "pressure", "meter", "force", "meter", "influenced", "pressure", "meter", "device", "includes", "power", "member", "arranged", "control", "pressure", "exerted", "pressure", "meter", "force", "meter", "applying", "overriding", "force", "pressure", "meter", "stop", "influence", "force", "meter", "removing", "overriding", "force", "pressure", "meter", "influence", "force", "meter", "resumed"], "labels_index": [526, 534, 411], "labels_num": 3}
+### Process
+
+```
+python data.py
 ```
 
-- **"testid"**: just the id.
-- **"features_content"**: the word segment (after removing the stopwords)
-- **"labels_index"**: The label index of the data records.
-- **"labels_num"**: The number of labels.
+* Data for train, dev and test:
+    - Train data: `*.train` files in train domains.
+    - Dev data: `*.trian` files in test domains as support data and `*.dev` files in test domains as query data.
+    - Test data: `*.trian` files in test domains as support data and `*.test` files in test domains as query data.
+* Pre-process all the texts data.
+* Extract vocabulary with train data. Vocabulary has size of 35913, with 0 as `<pad>` and 1 as `<unk>`.
+* Index all the texts with the vocabulary.
+* Training batch composition: 5 negative support data + 5 positive support data + 27 negative query data + 27 positive query data.
+In each batch, support data and query data are randomly divided.
+As this is a 2-way 5-shot problem, the 2-ways means the amount of labels (negative/positive) and the 5-shot means the size of support data with the same label.
+* Dev batch composition: 5 negative support data + 5 positive support data + 54 query data. There are 183 batches in total.
+* Test batch composition: 5 negative support data + 5 positive support data + 54 query data. There are 181 batches in total.
+* Above all, the batch size is always 64.
 
-### Text Segment
+### Word2Vec
 
-1. You can use `nltk` package if you are going to deal with the English text data.
+```
+python word2vec.py
+```
 
-2. You can use `jieba` package if you are going to deal with the Chinese text data.
+* It is hard to train without Word2Vec weights initialization! Therefore Word2Vec weights are necessary!
+* Train Word2Vec model with texts in train data, 95584 texts in total.
+* Get the weights of the Word2Vec model.
+* Load the weights in the encoder module.
 
-### Data Format
+## Model
 
-This repository can be used in other datasets (text classification) in two ways:
-1. Modify your datasets into the same format of [the sample](https://github.com/RandolphVI/Multi-Label-Text-Classification/blob/master/data).
-2. Modify the data preprocessing code in `data_helpers.py`.
+* Encoder Module: bi-direction recurrent neural network with self-attention.
+* Induction Module: dynamic routing induction algorithm.
+* Relation Module: measure the correlation between each pair of query and class and output the relation scores.
+* See the paper in the reference section (at the end) for details.
 
-Anyway, it should depend on what your data and task are.
+## Train, Dev and Test
 
-**🤔Before you open the new issue about the data format, please check the `data_sample.json` and read the other open issues first, because someone maybe ask me the same question already. For example:**
+```
+export CUDA_VISIBLE_DEVICES=1
+python main.py
+```
 
-- [输入文件的格式是什么样子的？](https://github.com/RandolphVI/Multi-Label-Text-Classification/issues/1)
-- [Where is the dataset for training?](https://github.com/RandolphVI/Multi-Label-Text-Classification/issues/7)
-- [在 data_helpers.py 中的 content.txt 与 metadata.tsv 是什么，具体格式是什么，能否提供一个样例？](https://github.com/RandolphVI/Multi-Label-Text-Classification/issues/12)
+* Training Strategy: episode-based meta training
+* Dev while training and record dev accuracy.
+* Pick the checkpoint with the highest dev accuracy as the best model and test on it.
 
-### Pre-trained Word Vectors
+## Result on ARSC
 
-**You can download the [Word2vec model file](https://drive.google.com/file/d/1S33iejwuQOIaNQfXW7fA_6zBwHHClT--/view?usp=sharing) (dim=100). Make sure they are unzipped and under the `/data` folder.**
+* tensorboard
 
-You can pre-training your word vectors (based on your corpus) in many ways:
-- Use `gensim` package to pre-train data.
-- Use `glove` tools to pre-train data.
-- Even can use a **fasttext** network to pre-train data.
+```
+tensorboard --logdir=log/
+```
 
-## Usage
+* result
 
-See [Usage](https://github.com/RandolphVI/Multi-Label-Text-Classification/blob/master/Usage.md).
+| Train Loss | Train Accuracy |
+| ------| ------|
+| ![train_loss](pic/train_loss.png) | ![train_acc](pic/train_acc.png) |
 
-## Network Structure
+| Dev Accuracy (achieves the highest 0.8410 at episode 9200)|Test Accuracy (at episode 9200) |Test Accuracy (paper)|
+| ------|------| --- |
+| ![dev_loss](pic/dev_acc.png) |__0.8452__ |__0.8563__ |
 
-### FastText
-
-![](https://farm2.staticflickr.com/1917/45609842012_30f370a0ee_o.png)
-
-References:
-
-- [Bag of Tricks for Efficient Text Classification](https://arxiv.org/pdf/1607.01759.pdf)
-
----
-
-### TextANN
-
-![](https://farm2.staticflickr.com/1965/44745949305_50f831a579_o.png)
-
-References:
-
-- **Personal ideas 🙃**
-
----
-
-### TextCNN
-
-![](https://farm2.staticflickr.com/1927/44935475604_1d6b8f71a3_o.png)
-
-References:
-
-- [Convolutional Neural Networks for Sentence Classification](http://arxiv.org/abs/1408.5882)
-- [A Sensitivity Analysis of (and Practitioners' Guide to) Convolutional Neural Networks for Sentence Classification](http://arxiv.org/abs/1510.03820)
-
----
-
-### TextRNN
-
-**Warning: Model can use but not finished yet 🤪!**
-
-![](https://farm2.staticflickr.com/1925/30719666177_6665038ea2_o.png)
-
-#### TODO
-1. Add BN-LSTM cell unit.
-2. Add attention.
-
-References:
-
-- [Recurrent Neural Network for Text Classification with Multi-Task Learning](http://www.aaai.org/ocs/index.php/AAAI/AAAI15/paper/download/9745/9552)
-
----
-
-### TextCRNN
-
-![](https://farm2.staticflickr.com/1915/43842346360_e4660c5921_o.png)
-
-References:
-
-- **Personal ideas 🙃**
-
----
-
-### TextRCNN
-
-![](https://farm2.staticflickr.com/1950/31788031648_b5cba7bbf0_o.png)
-
-References:
-
-- **Personal ideas 🙃**
-
----
-
-### TextHAN
-
-References:
-
-- [Hierarchical Attention Networks for Document Classification](https://www.cs.cmu.edu/~diyiy/docs/naacl16.pdf)
-
----
-
-### TextSANN
-
-**Warning: Model can use but not finished yet 🤪!**
-
-#### TODO
-1. Add attention penalization loss.
-2. Add visualization.
-
-References:
-
-- [A STRUCTURED SELF-ATTENTIVE SENTENCE EMBEDDING](https://arxiv.org/pdf/1703.03130.pdf)
-
----
-
-## About Me
-
-黄威，Randolph
-
-SCU SE Bachelor; USTC CS Ph.D.
-
-Email: chinawolfman@hotmail.com
-
-My Blog: [randolph.pro](http://randolph.pro)
-
-LinkedIn: [randolph's linkedin](https://www.linkedin.com/in/randolph-%E9%BB%84%E5%A8%81/)
+## Author
+Zhongyu Chen
