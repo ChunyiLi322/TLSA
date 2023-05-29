@@ -1,0 +1,105 @@
+By default, the bucket owner has this permission and the bucket owner can grant this permission to others.	1
+The bucket owner can grant this permission to others.	1
+To host website on Amazon S3, you can configure a bucket as website by adding a website configuration.	1
+By default, the bucket owner has this permission and can grant it to others.	1
+By default, the bucket owner has this permission and can grant this permission to others.	1
+By default, only the bucket owner can configure the website attached to a bucket; however, bucket owners can allow other users to set the website configuration by writing a bucket policy that grants them the S3:PutBucketWebsite permission.	1
+You can use the following request headers in addition to the Common Request Headers.These headers enable you to set access permissions using one of the following methods:Specify canned ACL, or Specify the permission for each grantee explicitlyAmazon S3 supports a set of predefined ACLs, known as canned ACLs.	1
+Type: String Default: private Valid Values: private | public-read | public-read-write | authenticated-read | bucket-owner-read | bucket-owner-full-control Constraints: None NoSpecify access permissions explicitly — If you want to explicitly grant access permissions to specific AWS accounts or groups, you can use the following headers.	1
+The operation uses the following response header, in addition to the response headers common to most requests.	1
+Writes lenMM bytes from the specified byteMM array starting at offset offMM to this output stream.	-1
+Note that this method does not call the writeMM method of its underlying input stream with the same arguments.	-1
+if an I/O error occurs.	-1
+The number of characters read, or -1 if the end of the stream has been reached.	-1
+If the encoding has an historical name then that name is returned; otherwise the encoding's canonical name is returned.	-1
+This method will return nullMM if the stream has been closed.	-1
+The historical name of this encoding, or nullMM if the stream has been closed.	-1
+Report an InvalidClassException for the reason specified.	-1
+Constructs an InvalidObjectExceptionMM .	-1
+Constructs an IOException with the specified cause and a detail message of (cause==null ?	-1
+the underlying input stream.	-1
+Marks the current position in this input stream.	-1
+Often this is most easily done by invoking some general parser.	-1
+if an I/O error occurs.	-1
+Skips over and discards nMM bytes of data from this input stream.	-1
+The skipMM method may, for a variety of reasons, end up skipping over some smaller number of bytes, possibly 0MM .	-1
+Create a new line-numbering reader, using the default input-buffer size.	-1
+Whenever a line terminator is read the current line number is incremented.	-1
+A String containing the contents of the line, not including any line termination characters, or null if the end of the stream has been reached.	-1
+If an I/O error occurs.	-1
+Get the current line number.	-1
+If an I/O error occurs.	-1
+Reset the stream to the most recent mark.	-1
+Line terminators are compressed into single newline ('\n') characters.	-1
+If an I/O error occurs.	-1
+The number of characters to skip.	-1
+Constructor to create a new NotActiveException with the reason given.	-1
+Class of the instance being serialized/deserialized.	-1
+Creates an ObjectInputStream that reads from the specified InputStream.	-1
+Subclasses may implement this method to allow classes to be fetched from an alternate source.	-1
+This method will be invoked only once for each unique class in the stream.	-1
+This method can be implemented by subclasses to use an alternate loading mechanism but must return a ClassMM object.	-1
+The default implementation of this method in ObjectInputStreamMM returns the result of calling Class.forName(desc.getName(), false, loader) where loaderMM is determined as follows: if there is a method on the current thread's stack whose declaring class was defined by a user-defined class loader (and was not a generated to implement reflective invocations), then loaderMM is class loader corresponding to the closest such method to the currently executing frame; otherwise, loaderMM is nullMM .	-1
+if class of a serialized object cannot be found.	-1
+Class of a serialized object cannot be found.	-1
+Reads in a line that has been terminated by a \n, \r, \r\n or EOF.	-1
+Reads primitive and object field values from stream.	-1
+the number of available bytes.	-1
+If an I/O error has occurred.	-1
+the byte read, or -1 if the end of the stream is reached.	-1
+Reads a 16 bit char.	-1
+Reads bytes, blocking until all bytes are read.	-1
+If other I/O error has occurred.	-1
+the read 64 bit long.	-1
+If other I/O error has occurred.	-1
+Reads an 8 bit byte.	-1
+Reads an unsigned 8 bit byte.	-1
+If other I/O error has occurred.	-1
+Read a class descriptor from the serialization stream.	-1
+This method is called by trusted subclasses of ObjectOutputStream that constructed ObjectOutputStream using the protected no-arg constructor.	-1
+"Reads an ""unshared"" object from the ObjectInputStream."	-1
+While similar to resolveObject these validations are called after the entire graph has been reconstituted.	-1
+the object to receive the validation callback.	-1
+This method is called after an object has been read but before it is returned from readObject.	-1
+Any of the usual Input/Output exceptions.	-1
+Returns a proxy class that implements the interfaces named in a proxy class descriptor; subclasses may implement this method to read custom data from the stream along with the descriptors for dynamic proxy classes, allowing them to use an alternate loading mechanism for the interfaces and the proxy class.	-1
+The default implementation of this method in ObjectInputStreamMM returns the result of calling Proxy.getProxyClassMM with the list of ClassMM objects for the interfaces that are named in the interfacesMM parameter.	-1
+The ClassMM object for each interface name iMM is the value returned by calling Class.forName(i, false, loader) where loaderMM is that of the first non- nullMM class loader up the execution stack, or nullMM if no non- nullMM class loaders are on the stack (the same class loader choice used by the resolveClassMM method).	-1
+Unless any of the resolved interfaces are non-public, this same value of loaderMM is also the class loader passed to Proxy.getProxyClassMM ; if non-public interfaces are present, their class loader is passed instead (if more than one non-public interface class loader is encountered, an IllegalAccessErrorMM is thrown).	-1
+a proxy class for the specified interfaces.	-1
+This constructor writes the serialization stream header to the underlying stream; callers may wish to flush the stream immediately to ensure that constructors for receiving ObjectInputStreams will not block when reading the header.	-1
+"If a security manager is installed, this constructor will check for the ""enableSubclassImplementation"" SerializablePermission when invoked directly or indirectly by the constructor of a subclass which overrides the ObjectOutputStream.putFields or ObjectOutputStream.writeUnshared methods."	-1
+the stream to write the data and fields to.	-1
+Writes a sub array of bytes.	-1
+the number of bytes that are written.	-1
+If an I/O error has occurred.	-1
+The fields will be written to the stream when writeFields method is called.	-1
+if I/O errors occur.	-1
+Objects previously written to the stream will not be refered to as already being in the stream.	-1
+They will be written to the stream again.	-1
+Writes a String as a sequence of bytes.	-1
+if I/O errors occur while writing to the underlying stream.	-1
+Writes a 16 bit char.	-1
+the float value to be written.	-1
+By default this method does nothing.	-1
+The corresponding method in ObjectInputStream is resolveClass.	-1
+This method may make free use of the ObjectOutputStream to save any representation of the class it deems suitable (for example, the bytes of the class file).	-1
+This method is called exactly once for each unique proxy class descriptor in the stream.	-1
+Writes all buffered data from this stream to the underlying stream, but does not flush underlying stream.	-1
+Enable the stream to do replacement of objects in the stream.	-1
+if a security manager exists and its checkPermissionMM method denies enabling the stream to do replacement of objects in the stream.	-1
+Replacing objects is disabled until enableReplaceObject is called.	-1
+When a subclass is replacing objects it must insure that either a complementary substitution must be made during deserialization or that the substituted object is compatible with every field where the reference will be stored.	-1
+Objects whose type is not a subclass of the type of the field or array element abort the serialization by raising an exception and the object is not be stored.	-1
+This method is called only once when each object is first encountered.	-1
+if I/O errors occur.	-1
+Writes a String as a sequence of chars.	-1
+if I/O errors occur while writing to the underlying stream.	-1
+Writes a 64 bit double.	-1
+if I/O errors occur while writing to the underlying stream.	-1
+if I/O errors occur while writing to the underlying stream.	-1
+If writeObject is used to write an object that has been previously written with writeUnshared, the previous writeUnshared operation is treated as if it were a write of a separate object.	-1
+"ObjectOutputStream subclasses which override this method can only be constructed in security contexts possessing the ""enableSubclassImplementation"" SerializablePermission; any attempt to instantiate such a subclass without this permission will cause a SecurityException to be thrown."	-1
+Return a string describing this ObjectStreamClass.	-1
+Returns an array of length zero if there are no fields.	-1
+the ClassMM instance that this descriptor represents.	-1

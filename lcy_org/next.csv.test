@@ -1,0 +1,54 @@
+The first byte read is stored into element b[0]MM , the next one into b[1]MM , and so on.	1
+After this method returns, the next byte to be read will have the value b[0]MM , the byte after that will have the value b[1]MM , and so forth.	1
+You can create an empty billing plan and add a trial period and/or regular billing.	1
+If trueMM , sets the access permission to allow execute operations; if falseMM to disallow execute operations.	-1
+If executableMM is falseMM and the underlying file system does not implement an execute permission, then the operation will fail.	-1
+The new last-modified time, measured in milliseconds since the epoch (00:00:00 GMT, January 1, 1970).	-1
+The &鈭╣.eclipse.jdt.core.dom.QualifiedName&& class defines methods that operate on file attributes including file permissions.	-1
+A convenience method to set the owner's read permission for this abstract pathname.	-1
+Sets the owner's or everybody's write permission for this abstract pathname.	-1
+trueMM if and only if the operation succeeded.	-1
+The operation will fail if the user does not have permission to change the access permissions of this abstract pathname.	-1
+The resulting Path is associated with the getDefault default-filesystem .	-1
+If this abstract pathname is the empty abstract pathname then this method returns a Path that may be used to access the current user directory.	-1
+a Path constructed from this abstract path.	-1
+If it can be determined that the file denoted by this abstract pathname is a directory, then the resulting URI will end with a slash.	-1
+"An absolute, hierarchical URI with a scheme equal to ""file"", a path representing this abstract pathname, and undefined authority, query, and fragment components."	-1
+The exact form of the URL is system-dependent.	-1
+Thrown when the buffers cannot be flushed, or because the system cannot guarantee that all the buffers have been synchronized with physical media.	-1
+If there is a security manager, its checkReadMM method is called with the file descriptor fdObjMM as its argument to see if it's ok to read the file descriptor.	-1
+The next invocation might be the same thread or another thread.	-1
+A single read or skip of this many bytes will not block, but may read or skip fewer bytes.	-1
+In some cases, a non-blocking read (or skip) may appear to be blocked when it is merely slow, for example when reading large files over slow networks.	-1
+an estimate of the number of remaining bytes that can be read (or skipped over) from this input stream without blocking.	-1
+if this file input stream has been closed by calling close or an I/O error occurs.	-1
+Returns the FileDescriptorMM object that represents the connection to the actual file in the file system being used by this FileInputStreamMM .	-1
+if an I/O error occurs.	-1
+if an I/O error occurs.	-1
+Reads up to b.lengthMM bytes of data from this input stream into an array of bytes.	-1
+If lenMM is not zero, the method blocks until some input is available; otherwise, no bytes are read and 0MM is returned.	-1
+the start offset in the destination array bMM .	-1
+if an I/O error occurs.	-1
+the number of bytes to be skipped.	-1
+First, if there is a security manager, its checkWriteMM method is called with the path represented by the fileMM argument as its argument.	-1
+the file to be opened for writing.	-1
+if the file exists but is a directory rather than a regular file, does not exist but cannot be created, or cannot be opened for any other reason.	-1
+This constructor does not throw an exception if fdObjMM is valid invalid .	-1
+the file descriptor to be opened for writing.	-1
+if an I/O error occurs.	-1
+Returns the file descriptor associated with this stream.	-1
+Can be used from within code that needs to create a FilePermission object to pass into the impliesMM method.	-1
+the pathname of the file/directory.	-1
+Returns the hash code value for this object.	-1
+a hash code value for this object.	-1
+"Returns the ""canonical string representation"" of the actions."	-1
+FilePermission objects must be stored in a manner that allows them to be inserted into the collection in any order, but that also enables the PermissionCollection impliesMM method to be implemented in an efficient (and consistent) manner.	-1
+"For example, if you have two FilePermissions: ""/tmp/-"", ""read""MM ""/tmp/scratch/foo"", ""write""MM and you are calling the impliesMM method with the FilePermission: ""/tmp/scratch/foo"", ""read,write"", then the impliesMM function must take into account both the ""/tmp/-"" and ""/tmp/scratch/foo"" permissions, so the effective permission is ""read,write"", and impliesMM returns true."	-1
+Constructs a FileWriter object associated with a file descriptor.	-1
+The readlimitMM argument tells this input stream to allow that many bytes to be read before the mark position gets invalidated.	-1
+Returns an estimate of the number of bytes that can be read (or skipped over) from this input stream without blocking by the next caller of a method for this input stream.	-1
+Reads up to byte.lengthMM bytes of data from this input stream into an array of bytes.	-1
+the total number of bytes read into the buffer, or -1MM if there is no more data because the end of the stream has been reached.	-1
+If lenMM is not zero, the method blocks until some input is available; otherwise, no bytes are read and 0MM is returned.	-1
+This method blocks until input data is available, the end of the stream is detected, or an exception is thrown.	-1
+the number of bytes to be skipped.	-1

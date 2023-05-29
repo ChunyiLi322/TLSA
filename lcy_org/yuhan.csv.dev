@@ -1,0 +1,525 @@
+If the first readMM on the underlying stream returns -1MM to indicate end-of-file then this method returns -1MM .	1
+If the first readMM on the underlying stream returns -1MM to indicate end-of-file then this method returns -1MM .	1
+The value kMM is added into posMM and kMM is returned.	1
+Reads from the stream inMM a representation of a Unicode character string encoded in modified UTF-8 format; this string of characters is then returned as a StringMM .	1
+If the counter overflows, it will be wrapped to Integer.MAX_VALUE.	1
+Returns null if this abstract pathname does not denote a directory, or if an I/O error occurs.	1
+If the present length of the file as returned by the lengthMM method is greater than the newLengthMM argument then the file will be truncated.	1
+In this case, if the file offset as returned by the getFilePointerMM method is greater than newLengthMM then after this method returns the offset will be equal to newLengthMM .	1
+Once the stream has been closed, further read(), ready(), mark(), or reset() invocations will throw an IOException.	1
+The methods in this class can be called after the stream has been closed without generating an IOException.	1
+All objects (including all object versions and Delete Markers) in the bucket must be deleted before the bucket itself can be deleted.	1
+When you do, CommonPrefixes contains all (if there are any) keys between Prefix and the next occurrence of the string specified by delimiter.	1
+To use this operation, you must have permission to perform the s3:GetBucketCORS action.	1
+To use this operation, you must have permission to perform the s3:GetLifecycleConfiguration action.	1
+This element and its children are present when logging is enabled, otherwise, this element and its children are absent.	1
+To use this version of the operation, you must be the bucket owner.	1
+The operation returns a 200 OK if the bucket exists and you have permission to access it.	1
+If additional multipart uploads satisfy the list criteria, the response will contain an IsTruncated element with the value true.	1
+If key-marker is not specified, the upload-id-marker parameter is ignored.	1
+To use this operation, you must be allowed to perform the s3:PutBucketCORS action.	1
+Therefore, in response to any pre-flight OPTIONS request, Amazon S3 will return any requested headers.	1
+When Amazon S3 receives a cross-origin request (or a pre-flight OPTIONS request) against a bucket, it evaluates the cors configuration on the bucket and uses the first CORSRule rule that matches the incoming browser request to enable a cross-origin request.	1
+If you are not the bucket owner but have PutBucketPolicy permissions on the bucket, Amazon S3 returns a 405 Method Not Allowed.	1
+After you call the PUT operation to configure notifications on a bucket, Amazon S3 publishes a test notification to ensure that the topic exists and that the bucket owner has permission to publish to the specified topic.	1
+If request results in HTTP error 4xx, redirect request to another host where you might process the error.	1
+If a specific delete request either creates or deletes a delete marker, Amazon S3 returns this element in the response with a value of true.	1
+In this case, Amazon S3 creates a delete marker and returns its version ID in the response.	1
+To transition objects to the GLACIER storage class you can use lifecycle configuration.	1
+Adding the request header, x-amz-copy-source, makes the PUT operation copy the source object into the destination bucket.	1
+When adding a new object, you can grant permissions to individual AWS accounts or predefined groups defined by Amazon S3.	1
+If multipart upload is initiated by an IAM user, this element provides the parent account ID and display name.	1
+Returns the descriptor for any class, regardless of whether it implements .	-1
+Return true if this field has a primitive type.	-1
+If equal, the field names are compared.	-1
+a StringMM representing the name of the serializable field.	-1
+Otherwise, the ClassMM object for the type of the field is returned.	-1
+the offset of this field.	-1
+The encoding is as follows: B byte C char D double F float I int J long L class or interface S short Z boolean [ array .	-1
+the offset of the field.	-1
+Creates an OutputStreamWriter that uses the given charset encoder.	-1
+An OutputStream.	-1
+An OutputStream.	-1
+A String.	-1
+If an I/O error occurs.	-1
+Creates a PipedInputStreamMM so that it is not yet connect connected and uses the specified pipe size for the pipe's buffer.	-1
+It must be connect connected to a PipedOutputStreamMM before being used.	-1
+Data bytes written to srcMM will then be available as input from this stream.	-1
+the size of the pipe's buffer.	-1
+if an I/O error occurs.	-1
+This method blocks until input data is available, the end of the stream is detected, or an exception is thrown.	-1
+If srcMM is an unconnected piped output stream and snkMM is an unconnected piped input stream, they may be connected by either the call: snk.connect(src)MM or the call: src.connect(snk)MM The two calls have the same effect.	-1
+if an I/O error occurs.	-1
+Creates a piped output stream connected to the specified piped input stream.	-1
+if an I/O error occurs.	-1
+This method blocks until at least one character of input is available.	-1
+the buffer into which the data is read.	-1
+the total number of characters read into the buffer, or -1MM if there is no more data because the end of the stream has been reached.	-1
+Reads the next character of data from this piped stream.	-1
+the next character of data, or -1MM if the end of the stream is reached.	-1
+if the pipe is brokenMM , connect unconnected , closed, or an I/O error occurs.	-1
+A piped character stream is ready if the circular buffer is not empty.	-1
+Receives a char of data.	-1
+This method will block until some input is available.	-1
+Notifies all waiting threads that the last character of data has been received.	-1
+Data characters written to this stream will then be available as input from snkMM .	-1
+Writes the specified charMM to the piped output stream.	-1
+the piped reader to connect to.	-1
+If the file exists, then it will be truncated to zero size; otherwise, a new file will be created.	-1
+If the file exists, then it will be truncated to zero size; otherwise, a new file will be created.	-1
+A boolean; if true, the output buffer will be flushed whenever a byte array is written, one of the printlnMM methods is invoked, or a newline character or byte ( '\n'MM ) is written.	-1
+"If csq is null, then characters will be appended as if csq contained the four characters ""null""."	-1
+The behaviour on a null argument depends on the conversion.	-1
+Note that the bytes will be written as given; to write characters that will be translated according to the platform's default character encoding, use the print(char)MM or println(char)MM methods.	-1
+A byte array.	-1
+Flushes the stream and checks its error state.	-1
+A convenience method to write a formatted string to this output stream using the specified format string and arguments.	-1
+Arguments referenced by the format specifiers in the format string.	-1
+The behaviour on a null argument depends on the conversion.	-1
+The file to use as the destination of this writer.	-1
+The output will be written to the file and is buffered.	-1
+The 16-bit character to append.	-1
+Writes a formatted string to this writer using the specified format string and arguments.	-1
+If l is null then no localization is applied.	-1
+Arguments referenced by the format specifiers in the format string.	-1
+If there are more arguments than format specifiers, the extra arguments are ignored.	-1
+The maximum number of arguments is limited by the maximum dimension of a Java array as defined by The Java鈩	-1
+Prints an object.	-1
+The string produced by the valueOf MM method is translated into bytes according to the platform's default character encoding, and these bytes are written in exactly the manner of the write MM method.	-1
+Closing a previously closed stream has no effect.	-1
+A format string as described in Format string syntax.	-1
+If automatic flushing is enabled, calls to this method will flush the output buffer.	-1
+If l is null then no localization is applied.	-1
+Arguments referenced by the format specifiers in the format string.	-1
+The maximum number of arguments is limited by the maximum dimension of a Java array as defined by The Java鈩	-1
+Creates a PushbackInputStreamMM and saves its argument, the input stream inMM , for later use.	-1
+Closes this input stream and releases any system resources associated with the stream.	-1
+if an I/O error occurs.	-1
+if this method is invoked.	-1
+The method returns the sum of the number of bytes that have been pushed back and the value returned by available available .	-1
+the number of bytes that can be read (or skipped over) from the input stream without blocking.	-1
+If no byte is available because the end of the stream has been reached, the value -1MM is returned.	-1
+This method blocks until input data is available, the end of the stream is detected, or an exception is thrown.	-1
+If lenMM is not zero, the method blocks until at least 1 byte of input is available; otherwise, no bytes are read and 0MM is returned.	-1
+the buffer into which the data is read.	-1
+Skips over and discards nMM bytes of data from this input stream.	-1
+It then calls the skipMM method of the underlying input stream if more bytes need to be skipped.	-1
+The actual number of bytes skipped is returned.	-1
+Creates a new pushback reader with a one-character pushback buffer.	-1
+The reader from which characters will be read.	-1
+Once the stream has been closed, further read(), unread(), ready(), or skip() invocations will throw an IOException.	-1
+Destination buffer.	-1
+Reads a single character.	-1
+The character read, or -1 if the end of the stream has been reached.	-1
+Offset of first character to push back.	-1
+rw Open for reading and writing.	-1
+This is useful for ensuring that critical information is not lost in the event of a system crash.	-1
+"The ""rwd"" mode can be used to reduce the number of I/O operations performed."	-1
+If there is a security manager, its checkReadMM method is called with the pathname of the fileMM argument as its argument to see if read access to the file is allowed.	-1
+A closed random access file cannot perform input or output operations and cannot be reopened.	-1
+Reads the next line of text from this file.	-1
+A line of text is terminated by a carriage-return character ( '\r'MM ), a newline character ( '\n'MM ), a carriage-return character immediately followed by a newline character, or the end of the file.	-1
+This method blocks until a newline character is read, a carriage return and the byte following it are read (to see if it is a newline), the end of the file is reached, or an exception is thrown.	-1
+the next line of text from this file, or null if end of file is encountered before even one byte is read.	-1
+The write starts at the current position of the file pointer.	-1
+an intMM to be written.	-1
+The desired length of the file.	-1
+Changing the file's length via this object will change the length seen via the file channel, and vice versa.	-1
+Returns the opaque file descriptor object associated with this stream.	-1
+if an I/O error occurs.	-1
+Although RandomAccessFileMM is not a subclass of InputStreamMM , this method behaves in exactly the same way as the read method of InputStreamMM .	-1
+If the first byte cannot be read for any reason other than end of file, or if the random access file has been closed, or if some other I/O error occurs.	-1
+This method blocks if no input is yet available.	-1
+if an I/O error occurs.	-1
+The write starts at the current position of the file pointer.	-1
+This method reads two bytes from the file, starting at the current file pointer.	-1
+if an I/O error occurs.	-1
+the buffer into which the data is read.	-1
+if an I/O error occurs.	-1
+the buffer into which the data is read.	-1
+The first two bytes are read, starting from the current file pointer, as if by readUnsignedShortMM .	-1
+This method blocks until all the bytes are read, the end of the stream is detected, or an exception is thrown.	-1
+a Unicode string.	-1
+if an I/O error occurs.	-1
+Reads a floatMM from this file.	-1
+the next four bytes of this file, interpreted as a floatMM .	-1
+Converts the float argument to an intMM using the floatToIntBitsMM method in class FloatMM , and then writes that intMM value to the file as a four-byte quantity, high byte first.	-1
+Reads a signed 64-bit integer from this file.	-1
+the next eight bytes of this file, interpreted as a longMM .	-1
+Reads a booleanMM from this file.	-1
+This method reads a single byte from the file, starting at the current file pointer.	-1
+a booleanMM value to be written.	-1
+if an I/O error occurs.	-1
+Reads a doubleMM from this file.	-1
+The method reads two bytes from this file, starting at the current file pointer.	-1
+This method reads two bytes from the file, starting at the current file pointer.	-1
+the actual number of bytes skipped.	-1
+a byteMM value to be written.	-1
+if an I/O error occurs.	-1
+if an I/O error occurs.	-1
+the offset from the beginning of the file, in bytes, at which the next read or write occurs.	-1
+the offset position, measured in bytes from the beginning of the file, at which to set the file pointer.	-1
+A closed SequenceInputStreamMM cannot perform input operations and cannot be reopened.	-1
+if an I/O error occurs.	-1
+The next invocation might be the same thread or another thread.	-1
+This method tries to read one character from the current substream.	-1
+The name is the symbolic name of the SerializablePermission, and the actions String is currently unused and should be null.	-1
+a Reader object providing the input stream.	-1
+Returns the string representation of the current stream token and the line number it occurs on.	-1
+a string representation of the token.	-1
+The type of the next token is returned in the ttypeMM field.	-1
+All characters from the comment character to the end of the line are ignored by this stream tokenizer.	-1
+the character.	-1
+In addition, a carriage-return character followed immediately by a newline character is treated as a single end-of-line token.	-1
+Return the current line number.	-1
+When such a character is encountered by the parser, the parser treats it as a single-character token and sets ttypeMM field to the character value.	-1
+The linenoMM method may no longer reflect the presence of such terminator characters in its line count.	-1
+"Specifies that all characters c in the range low聽<=聽c聽<=聽highMM are ""ordinary"" in this tokenizer."	-1
+"The usual escape sequences such as ""\n""MM and ""\t""MM are recognized and converted to single characters as the string is parsed."	-1
+Any other attribute settings for the specified character are cleared.	-1
+the character.	-1
+Any occurrence of two consecutive slash characters ( '/'MM ) is treated as the beginning of a comment that extends to the end of the line.	-1
+If the flag argument is falseMM , then C++-style comments are not treated specially.	-1
+If the flag argument is trueMM , this stream tokenizer recognizes C-style comments.	-1
+the low end of the range.	-1
+A word token consists of a word constituent followed by zero or more word constituents or number constituents.	-1
+Resets the input stream to begin reading from the first character of this input stream's underlying buffer.	-1
+the total number of bytes read into the buffer, or -1MM if there is no more data because the end of the stream has been reached.	-1
+The value byte is returned as an intMM in the range 0MM to 255MM .	-1
+It returns the low eight bits of the next character in this input stream's buffer.	-1
+the next byte of data, or -1MM if the end of the stream is reached.	-1
+Closes the stream and releases any system resources associated with it.	-1
+Marks the present position in the stream.	-1
+Resets the stream to the most recent mark, or to the beginning of the string if it has never been marked.	-1
+Reads a single character.	-1
+The number of characters read, or -1 if the end of the stream has been reached.	-1
+Returns the number of characters that were skipped.	-1
+It is not possible to skip backwards past the beginning of the string.	-1
+The number of char values that will fit into this buffer before it is automatically expanded.	-1
+Return the buffer's current value as a string.	-1
+A detail message is a String that describes this particular exception.	-1
+Constructs an UnsupportedEncodingException without a detail message.	-1
+Constructs a UTFDataFormatExceptionMM with the specified detail message.	-1
+the detail message.	-1
+the exception that terminated the operation (the cause), which may be null.	-1
+Important: This call only works after a buyer has approved the payment using the provided PayPal approval URL.	-1
+Returns a payment object for the completed PayPal payment.	-1
+Returns a payment object.	-1
+The payments returned are the payments made to the merchant making the call.	-1
+Use this call to refund a completed payment.	-1
+For partial refunds, you can include an amount.	-1
+Returns an authorization object.	-1
+Note: You can only reauthorize PayPal account payments.	-1
+Pass the authorization id in the endpoint along with a new authorization object if you need to authorize a different amount.	-1
+Returns an authorization object with details of the reauthorization.	-1
+Pass the capture id in the endpoint.	-1
+Provide the captureId in the URI and an amount object.	-1
+Provide the capture_id in the URI and an amount object.	-1
+Use this call to get details about a specific billing plan.	-1
+Pass the billing plan id in the URI of a GET call.	-1
+Use this call to get a list of all billing plans based on their current state and optional query string parameters.	-1
+Returns a list of billing plans in a plan list object.	-1
+Pass the agreement details in the body of a POST call, including the following agreement object properties:	-1
+Use this call to update an agreement.	-1
+Pass the billing agreement id in the URI of a PATCH call, including the replace operation in the body.	-1
+Pass the agreement id in the URI of a POST call.	-1
+Pass the agreement id, start date, and end date in the URI of a GET call to search for the agreement transactions within a date range.	-1
+Use this call to cancel an agreement.	-1
+Returns an order object.	-1
+Pass the capture_id in the URI of a POST call.	-1
+Returns a refund object.	-1
+This implementation of the operation does not use request elements.	-1
+Type: Container Children: Owner, Buckets Ancestor: None Name Bucket's name.	-1
+This implementation of the operation uses only request headers that are common to all operations.	-1
+Deletes the lifecycle configuration from the specified bucket.	-1
+This implementation of the operation does not use request elements.	-1
+For more information, see Common Request Headers.	-1
+By default, only the bucket owner can delete the website configuration attached to a bucket.	-1
+This implementation of the operation does not use request parameters.	-1
+This implementation of the operation uses only response headers that are common to most responses.	-1
+For more information, see Common Response Headers.	-1
+Type: String Default: None Valid value: url No marker Specifies the key to start with when listing objects in a bucket.	-1
+Type: String Default: None No max-keys Sets the maximum number of keys returned in the response body.	-1
+The response might contain fewer keys but will never contain more.	-1
+This implementation of the operation uses only request headers that are common to all operations.	-1
+For more information, see Common Response Headers.	-1
+Type: String Ancestor: ListBucketResult ETag The entity tag is an MD5 hash of the object.	-1
+Type: String Ancestor: ListBucketResult MaxKeys The maximum number of keys returned in the response body.	-1
+Note This element is returned only if you have delimiter request parameter specified.	-1
+For more information, see Common Response Headers.	-1
+Name Description AccessControlList Container for ACL information.	-1
+Type: Container Ancestry: AccessControlPolicy.AccessControlList Grantee Container for DisplayName and ID of the person being granted permissions.	-1
+Type: Container Ancestry: AccessControlPolicy.AccessControlList.Grant ID Bucket owner's ID.	-1
+This implementation of the operation does not use request elements.	-1
+This implementation of the operation uses only response headers that are common to most responses.	-1
+You can add up to 100 rules to the configuration.	-1
+Type: Container Children: AllowedOrigin, AllowedMethod, MaxAgeSeconds, ExposeHeader, ID.	-1
+Each header name specified in the Access-Control-Request-Headers must have a corresponding entry in the rule.	-1
+You add one ExposeHeader in the rule for each header.	-1
+Type: Integer (seconds) Ancestor: CORSRule	-1
+To learn more about object expiration, go to Object Lifecycle Management in the Amazon Simple Storage Service Developer Guide.	-1
+For more information, see Common Request Headers.	-1
+This implementation of the operation does not use request elements.	-1
+The time is always midnight UTC.	-1
+Type: String Ancestor: Transition	-1
+If you have the correct permissions, but you're not the bucket owner, Amazon S3 returns a 405 Method Not Allowed error.	-1
+This implementation of the operation does not use request elements.	-1
+The response contains the (JSON) policy of the specified bucket.	-1
+This implementation of the operation does not use request parameters.	-1
+This implementation of the operation uses only request headers that are common to all operations.	-1
+For more information, see Common Response Headers.	-1
+Name Description BucketLoggingStatus Container for the response.	-1
+Type: Container Ancestry: None EmailAddress E-mail address of the person whose logging permissions are displayed.	-1
+This implementation of the operation uses only request headers that are common to all operations.	-1
+This implementation of the operation does not use request elements.	-1
+An object key can contain any Unicode character; however, XML 1.0 parser cannot parse some characters, such as characters with an ASCII value from 0 to 10.	-1
+Type: String Default: 1000 No prefix Use this parameter to select only those keys that begin with the specified prefix.	-1
+(You can think of using prefix to make groups in the same way you'd use a folder in a file system.)	-1
+Also, see delimiter.	-1
+For more information, see Common Request Headers.	-1
+This implementation of the operation uses only response headers that are common to most responses.	-1
+Type: String Ancestor: ListBucketResult ETag The entity tag is an MD5 hash of the object.	-1
+Type: Boolean Valid Values: true | false Ancestor: ListVersionsResult.Version | ListVersionsResult.DeleteMarker IsTruncated A flag that indicates whether (true) or not (false) Amazon S3 returned all of the results that satisfied the search criteria.	-1
+Type: String Ancestor: ListVersionsResult NextKeyMarker When the number of responses exceeds the value of MaxKeys, NextKeyMarker specifies the first key not returned that satisfies the search criteria.	-1
+Use this value for the key-marker request parameter in a subsequent request.	-1
+Type: String Ancestor: ListVersionsResult.Version StorageClass Always STANDARD.	-1
+Type: String Ancestor: ListVersionsResult.Version Version Container for version information.	-1
+For more information, see Requester Pays Buckets.	-1
+This implementation of the operation does not use request elements.	-1
+For more information, see Common Response Headers.	-1
+Type: Enum Valid Values: Disabled | Enabled Ancestor: VersioningConfiguration Status The versioning state of the bucket.	-1
+This implementation of the operation uses only response headers that are common to most responses.	-1
+For more information, see PUT Bucket website.	-1
+This implementation of the operation does not use request parameters.	-1
+1,000 multipart uploads is the maximum number of uploads a response can include, which is also the default value.	-1
+To list the additional multipart uploads, use the key-marker and upload-id-marker request parameters.	-1
+In the response, the uploads are sorted by key.	-1
+For information on permissions required to use the multipart upload API, go to Multipart Upload API and Permissions in the Amazon Simple Storage Service Developer Guide .	-1
+The keys that are grouped under CommonPrefixes result element are not returned elsewhere in the response.	-1
+For characters that are not supported in XML 1.0, you can add this parameter to request that Amazon S3 encode the keys in the response.	-1
+Type: Integer Default: 1,000 No key-marker Together with upload-id-marker, this parameter specifies the multipart upload after which listing should begin.	-1
+(You can think of using prefix to make groups in the same way you'd use a folder in a file system.) Type: String No upload-id-?marker Together with key-marker, specifies the multipart upload after which listing should begin.	-1
+This operation does not use request elements.	-1
+For more information, see Common Response Headers.	-1
+Name Description ListMultipartUploadsResult Container for the response.	-1
+Type: String Ancestor: ListMultipartUploadsResult UploadIdMarker Upload ID after which listing began.	-1
+Type: Integer Ancestor: ListMultipartUploadsResult IsTruncated Indicates whether the returned list of multipart uploads is truncated.	-1
+Type: Integer Ancestor: Upload Initiator Container element that identifies who initiated the multipart upload.	-1
+Type: Container Children: ID, DisplayName Ancestor: Upload StorageClass The class of storage (STANDARD or REDUCED_REDUDANCY) that will be used to store the object when the multipart upload is complete.	-1
+Type: Date Ancestor: Upload ListMultipartUploadsResult.Prefix When a prefix is provided in the request, this field contains the specified prefix.	-1
+For more information, see How to Select a Region for Your Buckets.	-1
+You have the following two ways to grant these permissions:Specify a canned ACL — Amazon S3 supports a set of predefined ACLs, known as canned ACLs.	-1
+Type: Container Ancestor: None No LocationConstraint Specifies the region where the bucket will be created.	-1
+You can use one of the following two ways to set a bucket's permissions:Specify the ACL in the request body Specify permissions using request headers	-1
+For example, if you have an existing application that updates a bucket ACL using the request body, then you can continue to use that approach.	-1
+Amazon S3 supports a set of predefined ACLs, known as canned ACLs.	-1
+Each canned ACL has a predefined set of grantees and permissions.	-1
+For more information, see Canned ACL.	-1
+Note Each of the following request headers maps to specific permissions Amazon S3 supports in an ACL.	-1
+For more information go to Access Control List (ACL) Overview.Name Description Required x-amz-grant-read Allows the specified grantee(s) to list the objects in the bucket.	-1
+Type: String Default: None Constraints: None No x-amz-grant-full-control Allows the specified grantee(s) the READ, WRITE, READ_ACP, and WRITE_ACP permissions on the bucket.	-1
+Type: String Default: None Constraints: None NoFor each of these headers, the value is a comma-separated list of one or more grantees.	-1
+"For example, the following x-amz-grant-write header grants create, overwrite, and delete objects permission to LogDelivery group predefined by Amazon S3 and two AWS accounts identified by their email addresses.x-amz-grant-write: uri=""http://acs.amazonaws.com/groups/s3/LogDelivery"", emailAddress=""xyz@amazon.com"", emailAddress=""abc@amazon.com""For more information, go to Access Control List (ACL) Overview."	-1
+For more information about bucket logging, go to Server Access Logging.	-1
+Type: String Ancestors: AccessControlPolicy.Owner | AccessControlPolicy.AccessControlList.Grant No Owner Container for the bucket owner's display name and ID.	-1
+"Type: String Valid Values: FULL_CONTROL | WRITE | WRITE_ACP | READ | READ_ACP Ancestors: AccessControlPolicy.AccessControlList.Grant NoGrantee Values You can specify the person (grantee) to whom you're assigning access rights (using request elements) in the following ways: By the person's ID: <Grantee xmlns:xsi=""http://www.w3.org/2001/XMLSchema-instance"" xsi:type=""CanonicalUser""><ID>ID</ID><DisplayName>GranteesEmail</DisplayName></Grantee> DisplayName is optional and ignored in the request.,none"	-1
+For a rule to match, the following conditions must be met:The request's Origin header must match AllowedOrigin elements.	-1
+Every header specified in the Access-Control-Request-Headers request header of a pre-flight request must match an AllowedHeader element.	-1
+This header must be used as a message integrity check to verify that the request body was not corrupted in transit.	-1
+Ancestor: CORSConfiguration Yes ID A unique identifier for the rule.	-1
+Type: String Ancestor: CORSRule No AllowedMethod An HTTP method that you want to allow the origin to execute.	-1
+This can contain at most one * wild character.	-1
+This can contain at most one * wild character.	-1
+Type: String Ancestor: CORSRule No	-1
+This implementation of the operation does not use request parameters.	-1
+This implementation of the PUT operation uses the policy subresource to add to or replace a policy on a bucket.	-1
+This implementation of the operation uses only request headers that are common to all operations.	-1
+The body is a JSON string containing the policy contents containing the policy statements.	-1
+The Permissions request element specifies the kind of access the grantee has to the logs.	-1
+To enable logging, you use LoggingEnabled and its children request elements.	-1
+For more information about creating a bucket, see PUT Bucket.	-1
+For more information about returning the logging status of a bucket, see GET Bucket logging.	-1
+Type: Container Children: Grantee, Permission Ancestry: BucketLoggingStatus.LoggingEnabled.TargetGrants No Grantee Container for EmailAddress of the person being granted logging permissions.	-1
+The bucket owner is automatically granted FULL_CONTROL to all logs delivered to the bucket.	-1
+Type: String Valid Values: FULL_CONTROL | READ | WRITE Children: None Ancestry: BucketLoggingStatus.LoggingEnabled.TargetGrants.Grant No TargetBucket Specifies the bucket where you want Amazon S3 to store server access logs.	-1
+You can also configure multiple buckets to deliver their logs to the same target bucket.	-1
+For more information, see Common Request Headers.	-1
+Type: String Ancestry: TopicConfiguration No Event Bucket event for which to send notifications.	-1
+The following table lists the errors and possible causes.	-1
+You must use a topic that resides in the same Region as the bucket.	-1
+The bucket owner does not have Publish permission on the specified topic.	-1
+This implementation of the PUT operation uses the tagging subresource to add a set of tags to an existing bucket.	-1
+Type: String Ancestors: None Yes TagSet Container for a set of tags Type: Container Ancestors: Tagging Yes Tag Container for tag information.	-1
+Type: Container Ancestors: TagSet Yes Key Name of the tag.	-1
+Type: String Ancestors: Tag Yes	-1
+Please try again.	-1
+For more information, see Requester Pays Buckets.	-1
+Name Description Payer Specifies who pays for the download and request fees.	-1
+For more information, see Common Response Headers.	-1
+This implementation of the PUT operation uses the versioning subresource to set the versioning state of an existing bucket.	-1
+Type: String Default: None Condition: Required to configure the versioning state if versioning is configured with MFA Delete enabled.	-1
+No VersioningConfiguration Container for setting the versioning state.	-1
+This implementation of the operation uses only response headers that are common to most responses.	-1
+This implementation of the operation uses only request headers that are common to all operations.	-1
+The default is the protocol that is used in the original request.	-1
+This key identifies the page that is returned when such an error occurs.	-1
+Conditional RoutingRules Container for a collection of RoutingRule elements.	-1
+Type: Container Ancestors: WebsiteConfiguration.RoutingRules.RoutingRule No KeyPrefixEquals The object key name prefix when the redirect is applied.	-1
+You can redirect requests to another host, to another page, or with another protocol.	-1
+In the event of an error, you can specify a different error code to return.	-1
+Type: String Ancestors: WebsiteConfiguration.RoutingRules.RoutingRule Yes Protocol The protocol to use in the redirect request.	-1
+Type: String Ancestors: WebsiteConfiguration.RoutingRules.RoutingRule.Redirect Valid Values: http, https Condition: Not required if one of the siblings is present No HostName The host name to use in the redirect request.	-1
+No ReplaceKeyWith The specific object key to use in the redirect request.	-1
+For example, redirect request to error.html.	-1
+Type: String Ancestors: WebsiteConfiguration.RoutingRules.RoutingRule.Redirect Condition: Not required if one of the sibling is present.	-1
+Can be present only if ReplaceKeyPrefixWith is not provided.	-1
+No	-1
+If the object you want to delete is in a bucket where the bucket versioning configuration is MFA Delete enabled, you must include the x-amz-mfa request header in the DELETE versionId request.	-1
+For more information about MFA Delete, go to Using MFA Delete.	-1
+To see sample requests that use versioning, see Sample Request.	-1
+You can delete objects by explicitly calling the DELETE Object API or configure its lifecycle (see PUT Bucket lifecycle) to enable Amazon S3 to remove them for you.	-1
+Header Description x-amz-delete-marker Specifies whether the versioned object that was permanently deleted was (true) or was not (false) a delete marker.	-1
+If you know the object keys that you want to delete, then this operation provides a suitable alternative to sending individual delete requests (see DELETE Object), reducing per-request overhead	-1
+The Multi-Object Delete request contains a list of up to 1000 keys that you want to delete.	-1
+In quiet mode the response includes only keys where the delete operation encountered an error.	-1
+For more information, see Common Request Headers.Name Description Required Content-MD5 The base64-encoded 128-bit MD5 digest of the data.	-1
+Type: String Default: None Yes x-amz-mfa The value is the concatenation of the authentication device's serial number, a space, and the value that is displayed on your authentication device.	-1
+Conditional	-1
+Ancestor: None Type: Container Children: One or more Object elements and an optional Quiet element.	-1
+Name Description DeleteResult Container for the response.	-1
+Type: String Ancestor: Deleted Error Container for a failed delete operation that describes the object that Amazon S3 attempted to delete and the error it encountered.	-1
+To use GET, you must have READ access to the object.	-1
+You can, however, create a logical hierarchy by using object key names that imply a folder structure.	-1
+For example, instead of naming an object sample.jpg , you can name it photos/2006/February/sample.jpg	-1
+For more information about request types, see HTTP Host Header Bucket Specification in the Amazon Simple Storage Service Developer Guide	-1
+For more information about returning the ACL of an object, see GET Object ACL	-1
+If the object you are retrieving is a GLACIER storage class object, the object is archived in Amazon Glacier.	-1
+The set of headers you can override using these parameters is a subset of the headers that Amazon S3 accepts when you create an object.	-1
+The response headers that you can override for the GET response are Content-Type, Content-Language, Expires, Cache-Control, Content-Disposition, and Content-Encoding.	-1
+They can not be used with an unsigned (anonymous) request.Parameter Description Required response-content-type Sets the Content-Type header of the response.	-1
+Type: String Default: None No response-content-disposition Sets the Content-Disposition header of the response.	-1
+Type: String Default: None No response-content-encoding Sets the Content-Encoding header of the response.	-1
+Type: String Default: None Constraints: None No If-Modified-Since Return the object only if it has been modified since the specified time, otherwise return a 304 (not modified).	-1
+Type: String Default: None Constraints: None No If-Unmodified-Since Return the object only if it has not been modified since the specified time, otherwise return a 412 (precondition failed).	-1
+Header Description x-amz-delete-marker Specifies whether the object retrieved was (true) or was not (false) a Delete Marker.	-1
+Type: String Default: None	-1
+For general information about Amazon S3 errors and a list of error codes, see Error Responses.	-1
+Type: Container Ancestors: AccessControlPolicy Permission Specifies the permission (FULL_CONTROL, WRITE, READ_ACP) given to the grantee.	-1
+For general information about Amazon S3 errors and a list of error codes, see Error Responses.	-1
+For more information about BitTorrent, see Amazon S3 Torrent.	-1
+This implementation of the operation does not use request parameters.	-1
+This implementation of the operation uses only request headers that are common to all operations.	-1
+This implementation of the operation uses only response headers that are common to most responses.	-1
+This operation is useful if you are interested only in an object's metadata.	-1
+Type: String x-amz-meta-* If you supplied user metadata in a PUT object operation, that metadata is returned in one or more response headers prefixed with x-amz-meta- and with the suffix name that you provided on storage.	-1
+Response Elements This implementation of the operation does not return response elements.	-1
+Amazon S3 supports cross-origin resource sharing (CORS) by enabling you to add a cors subresource on a bucket.	-1
+This operation does not introduce any specific request parameters, but it may contain any request parameters that are required by the actual request.	-1
+Name Description Required Origin Identifies the origin of the cross-origin request to Amazon S3.	-1
+For example, to put an object with server-side encryption, this preflight request will determine if it can include the x-amz-server-side-encryption header with the request.	-1
+This implementation of the operation does not use request elements.	-1
+If the method in the request is not allowed, Amazon S3 will not include this header in the response.	-1
+Type: String Access-Control-Allow-Headers A comma-delimited list of HTTP headers that the browser can send in the actual request.	-1
+Type: String Access-Control-Expose-Headers A comma-delimited list of HTTP headers.	-1
+This header provides the JavaScript client with access to these headers in the response to the actual request.	-1
+Amazon S3 never stores partial objects: if you receive a successful response, you can be confident the entire object was stored.	-1
+In the request, you specify the number of days that you want the restored copy to exist.	-1
+An object in the Glacier storage class is an archived object.	-1
+For more information about archiving objects, go to Object Lifecycle Management in Amazon Simple Storage Service Developer Guide.	-1
+For more information, go to Access Control section in the Amazon S3 Developer Guide.	-1
+The minimum number of days that you can restore an object from Amazon Glacier is 1.	-1
+Type: Positive integer Ancestors: RestoreRequest	-1
+Error Code Description HTTP Status Code SOAP Fault Code Prefix RestoreAlreadyInProgress Object restore is already in progress.	-1
+Amazon S3 does not provide object locking; if you need this, make sure to build it into your application layer or use versioning instead.	-1
+To ensure that data is not corrupted traversing the network, use the Content-MD5 header.	-1
+Type: String Default: None Constraints: None No Content-Disposition Specifies presentational information for the object.	-1
+For more information, go to http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.17.	-1
+Within the PUT request header, the user-defined metadata is limited to 2 KB in size.	-1
+The size of user-defined metadata is measured by taking the sum of the number of bytes in the UTF-8 encoding of each key and value.	-1
+Type: String Default: None Constraints: None No x-amz-server-side?-encryption Specifies a server-side encryption algorithm to use when Amazon S3 creates an object.	-1
+Type: String Valid Value: AES256 No x-amz-storage-class RRS enables customers to reduce their costs by storing non-critical, reproducible data at lower levels of redundancy than Amazon S3's standard storage.	-1
+Type: Enum Default: STANDARD Valid Values: STANDARD | REDUCED_REDUNDANCY Constraints: You cannot specify GLACIER as the storage class.	-1
+"Type: String Default: None Constraints: The value must be prefixed by, ""/"", ""http://"" or ""https://""."	-1
+Each canned ACL has a predefined set of grantees and permissions.	-1
+Type: String Default: private Valid Values: private | public-read | public-read-write | authenticated-read | bucket-owner-read | bucket-owner-full-control Constraints: None NoSpecify access permissions explicitly — If you want to explicitly grant access permissions to specific AWS accounts or a group, you use the following headers.	-1
+Type: String Default: None Constraints: None No x-amz-grant-read-acp Allows grantee to read the object ACL.	-1
+It includes the expiry-date and rule-id key-value pairs providing object expiration information.	-1
+This implementation of the operation does not use request parameters.	-1
+To grant access permissions by specifying canned ACLs, you use the following header and specify the canned ACL name as its value.	-1
+If you use these ACL specific headers, you cannot use x-amz-acl header to set a canned ACL.	-1
+Type: String Default: None Constraints: None No x-amz-grant-write-acp Allows the specified grantee to write the ACL for the applicable bucket.	-1
+Type: String Default: None Constraints: None No x-amz-grant-full-control Allows the specified grantee the READ, WRITE, READ_ACP, and WRITE_ACP permissions on the bucket.	-1
+"For example, the following x-amz-grant-read header grants list objects permission to the two AWS accounts identified by their email addresses.x-amz-grant-read: emailAddress=""xyz@amazon.com"", emailAddress=""abc@amazon.com"""	-1
+Owner Grant Container for the grantee and his or her permissions Type: Container Ancestors: AccessControlPolicy.AccessControlList Grantee The subject whose permissions are being set.	-1
+</Grantee> DisplayName is optional and ignored in the request.	-1
+You create a copy of your object up to 5 GB in size in a single atomic operation using this API.	-1
+However, for copying an object greater than 5 GB, you must use the multipart upload API.	-1
+To copy an object only under certain conditions, such as whether the ETag matches or whether the object was modified before or after a specified date, use the request headers x-amz-copy-source-if-match, x-amz-copy-source-if-none-match, x-amz-copy-source-if-unmodified-since, or x-amz-copy-source-if-modified-since.	-1
+Make sure to design your application to parse the contents of the response and handle it appropriately.	-1
+In addition, the server-side-encryption, storage-class, and website-redirect-location metadata from the source is not copied.	-1
+You cannot copy an object to itself unless the MetadataDirective header is specified and its value set to REPLACE.	-1
+This header can be used with x-amz-copy-source-if-none-match, but cannot be used with other conditional copy headers.	-1
+"Type: String Default: None Constraints: The value must be prefixed by, ""/"", ""http://"" or ""https://""."	-1
+Each of these headers maps to specific permissions Amazon S3 supports in an ACL.	-1
+For more information, go to Access Control List (ACL) Overview.	-1
+Type: String Default: None Constraints: None NoYou specify each grantee as a type=value pair, where the type can be one of the following:emailAddress — if value specified is the email address of an AWS account id — if value specified is the canonical user ID of an AWS account uri — if granting permission to a predefined group.	-1
+This implementation of the operation does not use request elements.	-1
+Type: String x-amz-version-id Version of the copied object in the destination bucket.	-1
+The ETag only reflects changes to the contents of an object, not its metadata.	-1
+This upload ID is used to associate all the parts in the specific multipart upload.	-1
+For more information on multipart uploads, go to Multipart Upload Overview in the Amazon Simple Storage Service Developer Guide.	-1
+Name Description Required Cache-Control Can be used to specify caching behavior along the request/reply chain.	-1
+Type: String Default: binary/octel-stream Constraints: MIME types only No Expires The date and time at which the object is no longer cacheable.	-1
+Type: String Default: None No x-amz-meta- Any header starting with this prefix is considered user metadata.	-1
+It will be stored with the object and returned when you retrieve the object.	-1
+No x-amz-website?-redirect-location If the bucket is configured as a website, redirects requests for this object to another object in the same bucket or to an external URL.	-1
+"Type: String Default: None Constraints: The value must be prefixed by, ""/"", ""http://"" or ""https://""."	-1
+The length of the value is limited to 2 K.	-1
+By default, all objects are private, only the owner has full access control.	-1
+For more information, go to Access Control List (ACL) Overview.	-1
+Type: String Default: None Constraints: None No x-amz-grant-write-acp Allows grantee to write the ACL for the applicable object.	-1
+Type: String Default: None Constraints: None No x-amz-grant-full-control Allows grantee the READ, READ_ACP, and WRITE_ACP permissions on the object.	-1
+This operation does not use request elements.	-1
+This implementation of the operation can include the following response headers in addition to the response headers common to all responses.	-1
+Type: Container Children: Bucket, Key, UploadId Ancestors: None Bucket Name of the bucket to which the multipart upload was initiated.	-1
+This operation uploads a part in a multipart upload.	-1
+Note In this operation you provide part data in your request.	-1
+If they do not match, Amazon S3 returns an error.	-1
+This operation does not use request parameters.	-1
+For more information, see RFC 1864.	-1
+For more information, go to RFC 2616.	-1
+For more information, see Common Request Headers.Name Description Required x-amz-copy-source The name of the source bucket and the source object key name separated by a slash ('/').	-1
+If the values match, Amazon S3 returns an HTTP status code 412 precondition failed error.	-1
+For more information, see Common Response Headers.Name Description x-amz-copy-source-version-id The version of the source object that was copied, if you have enabled versioning on the source bucket.	-1
+Type: String	-1
+Type: String Ancestor: CopyPartResult LastModified Returns the date the part was last modified.	-1
+The upload ID might be invalid, or the multipart upload might have been aborted or completed.	-1
+In the Complete Multipart Upload request, you must provide the parts list.	-1
+You must ensure the parts list is complete, this operation concatenates the parts you provide in the list.	-1
+Ancestor: CompleteMultipartUpload Type: Container Children: PartNumber, ETag Yes PartNumber Part number that identifies the part.	-1
+Type: String x-amz-version-id Version ID of the newly created object, in case the bucket has versioning turned on.	-1
+Type: String	-1
+Type: String Ancestors: CompleteMultipartUploadResult Key The object key of the newly created object.	-1
+Type: String Ancestors: CompleteMultipartUploadResult ETag Entity tag that identifies the newly created object's data.	-1
+Error Code Description HTTP Status Code EntityTooSmall Your proposed upload is smaller than the minimum allowed object size.	-1
+Each part must be at least 5 MB in size, except the last part.	-1
+The part might not have been uploaded, or the specified entity tag might not have matched the part's entity tag.	-1
+400 Bad Request NoSuchUpload The specified multipart upload does not exist.	-1
+The storage consumed by any previously uploaded parts will be freed.	-1
+However, if any part uploads are currently in progress, those part uploads might or might not succeed.	-1
+To verify that all parts have been removed, so you don't get charged for the part storage, you should call the List Parts operation and ensure the parts list is empty.	-1
+This operation does not use response elements.	-1
+404 Not Found ClientFor general information about Amazon?S3 errors and a list of error codes, see Error Responses.	-1
+The default number of parts returned is 1,000 parts.	-1
+If your multipart upload consists of more than 1,000 parts, the response returns an IsTruncated field with the value of true, and a NextPartNumberMarker element.	-1
+In subsequent List Parts requests you can include the part-number-marker query string parameter and set its value to the NextPartNumberMarker field value from the previous response.	-1
+Parameter Description Required encoding-type Requests Amazon S3 to encode the response and specifies the encoding method to use.	-1
+Type: String Default: None Valid value: url No uploadId Upload ID identifying the multipart upload whose parts are being listed.	-1
+Type: String Default: None Yes max-parts Sets the maximum number of parts to return in the response body.	-1
+This operation uses only Request Headers common to most requests.	-1
+If the initiator is an IAM User, then this element provides the user ARN and display name.	-1
+Children: ID, DisplayName Type: Container Ancestor: ListPartsResult ID If the principal is an AWS account, it provides the Canonical User ID.	-1
+Type: Integer Ancestor: ListPartsResult NextPartNumberMarker When a list is truncated, this element specifies the last part in the list, as well as the value to use for the part-number-marker request parameter in a subsequent request.	-1
+Type: Integer Ancestor: ListPartsResult MaxParts Maximum number of parts that were allowed in the response.	-1
+Type: Integer Ancestor: ListPartsResult IsTruncated Indicates whether the returned list of parts is truncated.	-1
+Children: PartNumber, LastModified, ETag, Size Type: String Ancestor: ListPartsResult PartNumber Part number identifying the part.	-1

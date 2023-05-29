@@ -1,0 +1,315 @@
+Fewer bytes might be skipped if the end of the input stream is reached.	1
+After the 3-day honor period authorization expires, you can reauthorize the payment.	1
+Deletes the cors configuration information set for the bucket.	1
+By default, the bucket owner has this permission and can grant this permission to others.	1
+By default, the bucket owner has this permission and can grant it to others.	1
+"You can also specify only ""*"" to allow cross-origin access for all domains/origins.,sometimes"	1
+By default, the bucket owner has this permission and can grant this permission to others.	1
+You can use the versions subresource to list metadata about all of the versions of objects in a bucket.	1
+You can also use request parameters as selection criteria to return metadata about a subset of all the object versions.	1
+You can use prefixes to separate a bucket into different groupings of keys.	1
+This implementation of the operation can use the following request headers in addition to the request headers common to all operations.	1
+You can use the following request headers in addition to the Common Request Headers.	1
+This implementation of the PUT operation uses the logging subresource to set the logging parameters for a bucket and to specify permissions for who can view and modify the logging parameters.	1
+However, bucket owners can use a bucket policy to grant permission to other users to set this configuration with s3:PutBucketNotification permission.	1
+By default, the bucket owner has this permission and can grant this permission to others.	1
+You can use a website configuration to redirect all requests to the website endpoint of a bucket, or you can add routing rules that redirect only specific requests\n	1
+This operation uses the following Request Headers in addition to the request headers common to most requests.	1
+If you grant READ access to the anonymous user, you can return the object without using an authorization header	1
+To distribute large files to many people, you can save bandwidth costs using BitTorrent.	1
+This implementation of the operation can use the following request headers in addition to the request headers common to all operations.	1
+This implementation of the operation can use the following request headers in addition to the request headers common to all operations.	1
+This implementation of the operation can include the following response headers in addition to the response headers common to all responses.	1
+This implementation of the operation can use the following request headers in addition to the request headers common to all operations.	1
+This implementation of the operation can include the following response headers in addition to the response headers common to all responses.	1
+This implementation of the operation can use the following request headers in addition to the request headers common to all operations.	1
+This implementation of the operation can include the following response headers in addition to the response headers common to all responses.	1
+This implementation of the operation can include the following response headers in addition to the response headers common to all responses.	1
+This implementation of the operation can use the following request headers in addition to the request headers common to all operations.	1
+This implementation of the operation can include the following headers in addition to the response headers common to all response.	1
+Creates an output stream filter built on top of the specified underlying output stream.	-1
+the underlying output stream to be assigned to the field this.out for later use, or nullMM if this instance is to be created without an underlying stream.	-1
+The writeMM method of FilterOutputStreamMM calls the writeMM method of one argument on each byteMM to output.	-1
+Subclasses of FilterOutputStreamMM should provide a more efficient implementation of this method.	-1
+the data.	-1
+the start offset in the data.	-1
+the number of bytes to write.	-1
+Note that this method does not call the one-argument writeMM method of its underlying stream with the single argument bMM .	-1
+the data to be written.	-1
+Closes this output stream and releases any system resources associated with the stream.	-1
+if an I/O error occurs.	-1
+if an I/O error occurs.	-1
+An InputStream.	-1
+A charset decoder.	-1
+Creates an InputStreamReader that uses the default charset.	-1
+Reads a single character.	-1
+The character read, or -1 if the end of the stream has been reached.	-1
+If an I/O error occurs.	-1
+Reads characters into a portion of an array.	-1
+Destination buffer.	-1
+Offset at which to start storing characters.	-1
+Maximum number of characters to read.	-1
+Returns the name of the character encoding being used by this stream.	-1
+If this instance was created with the InputStreamReader constructor then the returned name, being unique for the encoding, may differ from the name passed to the constructor.	-1
+Tells whether this stream is ready to be read.	-1
+An InputStreamReader is ready if its input buffer is not empty, or if bytes are available to be read from the underlying byte stream.	-1
+If an I/O error occurs.	-1
+Constructs an InterruptedIOExceptionMM with nullMM as its error detail message.	-1
+Constructs an InterruptedIOExceptionMM with the specified detail message.	-1
+the detail message.	-1
+Constructs an InvalidClassException object.	-1
+Produce the message and include the classname, if present.	-1
+Detailed message explaining the reason for the failure.	-1
+Constructs a new instance of IOError with the specified cause.	-1
+The IOError is created with the detail message of (cause==null ?	-1
+The cause of this error, or null if the cause is not known.	-1
+null : cause.toString()) (which typically contains the class and detail message of cause ).	-1
+This constructor is useful for IO exceptions that are little more than wrappers for other throwables.	-1
+The cause (which is saved for later retrieval by the getCause method).	-1
+Constructs an IOException with the specified detail message and cause.	-1
+Note that the detail message associated with cause is not automatically incorporated into this exception's detail message.	-1
+The detail message (which is saved for later retrieval by the getMessage method).	-1
+The cause (which is saved for later retrieval by the getCause method).	-1
+Constructs an IOException with null as its error detail message.	-1
+Constructs a newline number input stream that reads its input from the specified input stream.	-1
+the current line number.	-1
+A subsequent call to the resetMM method repositions this stream at the last marked position so that subsequent reads re-read the same bytes.	-1
+the maximum limit of bytes that can be read before the mark position becomes invalid.	-1
+Repositions this stream to the position at the time the markMM method was last called on this input stream.	-1
+Stream marks are intended to be used in situations where you need to read ahead a little to see what's in the stream.	-1
+If the stream is of the type handled by the parser, it just chugs along happily.	-1
+Note that if the underlying input stream is able to supply k input characters without blocking, the LineNumberInputStreamMM can guarantee only to provide k/2 characters without blocking, because the k characters from the underlying input stream might consist of k/2 pairs of '\r'MM and '\n'MM , which are converted to just k/2 '\n'MM characters.	-1
+the number of bytes that can be read from this input stream without blocking.	-1
+if an I/O error occurs.	-1
+This method blocks until some input is available.	-1
+The readMM method of LineNumberInputStreamMM repeatedly calls the readMM method of zero arguments to fill in the byte array.	-1
+the buffer into which the data is read.	-1
+the start offset of the data.	-1
+the maximum number of bytes read.	-1
+the total number of bytes read into the buffer, or -1MM if there is no more data because the end of this stream has been reached.	-1
+Reads the next byte of data from this input stream.	-1
+The readMM method of LineNumberInputStreamMM calls the readMM method of the underlying input stream.	-1
+It checks for carriage returns and newline characters in the input, and modifies the current line number as appropriate.	-1
+A carriage-return character or a carriage return followed by a newline character are both converted into a single newline character.	-1
+the next byte of data, or -1MM if the end of this stream is reached.	-1
+The actual number of bytes skipped is returned.	-1
+If nMM is negative, no bytes are skipped.	-1
+the number of bytes to be skipped.	-1
+Sets the line number to the specified argument.	-1
+the new line number.	-1
+A Reader object to provide the underlying stream.	-1
+A Reader object to provide the underlying stream.	-1
+An int specifying the size of the buffer.	-1
+Read a line of text.	-1
+Mark the present position in the stream.	-1
+Subsequent calls to reset() will attempt to reposition the stream to this point, and will also reset the line number appropriately.	-1
+Limit on the number of characters that may be read while still preserving the mark.	-1
+After reading this many characters, attempting to reset the stream may fail.	-1
+Read characters into a portion of an array.	-1
+Whenever a line terminator is read the current line number is incremented.	-1
+Destination buffer.	-1
+Offset at which to start storing characters.	-1
+Maximum number of characters to read.	-1
+Read a single character.	-1
+Whenever a line terminator is read the current line number is incremented.	-1
+The character read, or -1 if the end of the stream has been reached.	-1
+Skip characters.	-1
+The number of characters actually skipped.	-1
+If an I/O error occurs.	-1
+Set the current line number.	-1
+Constructor to create a new NotActiveException without a reason.	-1
+Constructs a NotSerializableException object with message string.	-1
+Constructs a NotSerializableException object.	-1
+A serialization stream header is read from the stream and verified.	-1
+"If a security manager is installed, this constructor will check for the ""enableSubclassImplementation"" SerializablePermission when invoked directly or indirectly by the constructor of a subclass which overrides the ObjectInputStream.readFields or ObjectInputStream.readUnshared methods."	-1
+input stream to read from.	-1
+if an I/O error occurs while reading stream header.	-1
+Load the local class equivalent of the specified stream class description.	-1
+The corresponding method in ObjectOutputStreamMM is annotateClassMM .	-1
+Once returned, if the class is not an array class, its serialVersionUID is compared to the serialVersionUID of the serialized class, and if there is a mismatch, the deserialization fails and an is thrown.	-1
+Otherwise, the ClassNotFoundExceptionMM will be thrown to the caller of this method.	-1
+an instance of class ObjectStreamClassMM .	-1
+a ClassMM object corresponding to descMM .	-1
+any of the usual Input/Output exceptions.	-1
+Read an object from the ObjectInputStream.	-1
+The class of the object, the signature of the class, and the values of the non-transient and non-static fields of the class and all of its supertypes are read.	-1
+Default deserializing for a class can be overriden using the writeObject and readObject methods.	-1
+The root object is completely restored when all of its fields and the objects it references are completely restored.	-1
+The callbacks are registered by objects (in the readObject special methods) as they are individually restored.	-1
+Exceptions are thrown for problems with the InputStream and for classes that should not be deserialized.	-1
+All exceptions are fatal to the InputStream and leave it in an indeterminate state; it is up to the caller to ignore or recover the stream state.	-1
+Any of the usual Input/Output related exceptions.	-1
+It will throw the NotActiveException if it is called otherwise.	-1
+if the class of a serialized object could not be found.	-1
+Must be called to release any resources associated with the stream.	-1
+a String copy of the line.	-1
+Reads a 32 bit int.	-1
+If other I/O error has occurred.	-1
+if an I/O error occurs.	-1
+Returns the number of bytes that can be read without blocking.	-1
+if there are I/O errors while reading from the underlying InputStreamMM .	-1
+the buffer into which the data is read.	-1
+the start offset of the data.	-1
+the maximum number of bytes read.	-1
+the 16 bit char read.	-1
+If other I/O error has occurred.	-1
+the buffer into which the data is read.	-1
+the start offset of the data.	-1
+the maximum number of bytes to read.	-1
+the buffer into which the data is read.	-1
+If other I/O error has occurred.	-1
+the String.	-1
+if there are I/O errors while reading from the underlying InputStreamMM .	-1
+If other I/O error has occurred.	-1
+Reads a 64 bit long.	-1
+Reads in a boolean.	-1
+the boolean read.	-1
+If other I/O error has occurred.	-1
+the 8 bit byte read.	-1
+If other I/O error has occurred.	-1
+the 64 bit double read.	-1
+Reads a 16 bit short.	-1
+the 16 bit short read.	-1
+If other I/O error has occurred.	-1
+the 8 bit byte read.	-1
+If other I/O error has occurred.	-1
+Reads an unsigned 16 bit short.	-1
+Skips bytes.	-1
+the number of bytes to be skipped.	-1
+the actual number of bytes skipped.	-1
+If an I/O error has occurred.	-1
+Enable the stream to allow objects read from the stream to be replaced.	-1
+When enabled, the resolveObject method is called for every object being deserialized.	-1
+true for enabling use of resolveObjectMM for every object being deserialized.	-1
+the previous setting before this method was invoked.	-1
+if a security manager exists and its checkPermissionMM method denies enabling the stream to allow objects read from the stream to be replaced.	-1
+This method is called when the ObjectInputStream expects a class descriptor as the next item in the serialization stream.	-1
+Subclasses of ObjectInputStream may override this method to read in class descriptors that have been written in non-standard formats (by subclasses of ObjectOutputStream which have overridden the writeClassDescriptorMM method).	-1
+By default, this method reads class descriptors according to the format defined in the Object Serialization specification.	-1
+the class descriptor read.	-1
+If the Class of a serialized object used in the class descriptor representation cannot be found.	-1
+the Object read from the stream.	-1
+if I/O errors occurred while reading from the underlying stream.	-1
+It reads and verifies the magic number and version number.	-1
+if there are I/O errors while reading from the underlying InputStreamMM .	-1
+if control information in the stream is inconsistent.	-1
+This method is identical to readObject, except that it prevents subsequent calls to readObject and readUnshared from returning additional references to the deserialized instance obtained via this call.	-1
+Deserializing an object via readUnshared invalidates the stream handle associated with the returned object.	-1
+Note that this in itself does not always guarantee that the reference returned by readUnshared is unique; the deserialized object may define a readResolve method which returns an object visible to other parties, or readUnshared may return a Class object or enum constant obtainable elsewhere in the stream or through external means.	-1
+reference to deserialized object.	-1
+if an I/O error occurs during deserialization.	-1
+Register an object to be validated before the graph is returned.	-1
+controls the order of callbacks;zero is a good default.	-1
+Use higher numbers to be called back earlier, lower numbers for later callbacks.	-1
+The stream is not currently reading objects so it is invalid to register a callback.	-1
+The validation object is null.	-1
+The enableResolveObject method checks that the stream requesting to resolve object can be trusted.	-1
+To insure that the private state of objects is not unintentionally exposed only trusted streams may use resolveObject.	-1
+When a subclass is replacing objects it must insure that the substituted object is compatible with every field where the reference will be stored.	-1
+Objects whose type is not a subclass of the type of the field or array element abort the serialization by raising an exception and the object is not be stored.	-1
+This method is called only once when each object is first encountered.	-1
+All subsequent references to the object will be redirected to the new object.	-1
+This method is called exactly once for each unique proxy class descriptor in the stream.	-1
+The corresponding method in ObjectOutputStreamMM is annotateProxyClassMM .	-1
+any exception thrown by the underlying InputStreamMM .	-1
+Creates an ObjectOutputStream that writes to the specified OutputStream.	-1
+output stream to write to.	-1
+if an I/O error occurs while writing stream header.	-1
+if I/O errors occur while writing to the underlying stream.	-1
+the data to be written.	-1
+the start offset in the data.	-1
+Write the specified object to the ObjectOutputStream.	-1
+The class of the object, the signature of the class, and the values of the non-transient and non-static fields of the class and all of its supertypes are written.	-1
+Default serialization for a class can be overridden using the writeObject and the readObject methods.	-1
+Objects referenced by this object are written transitively so that a complete equivalent graph of objects can be reconstructed by an ObjectInputStream.	-1
+Exceptions are thrown for problems with the OutputStream and for classes that should not be serialized.	-1
+All exceptions are fatal to the OutputStream, which is left in an indeterminate state, and it is up to the caller to ignore or recover the stream state.	-1
+Any exception thrown by the underlying OutputStream.	-1
+Write the non-static and non-transient fields of the current class to this stream.	-1
+This may only be called from the writeObject method of the class being serialized.	-1
+It will throw the NotActiveException if it is called otherwise.	-1
+if I/O errors occur while writing to the underlying OutputStreamMM .	-1
+Closes the stream.	-1
+This method must be called to release any resources associated with the stream.	-1
+If an I/O error has occurred.	-1
+If an I/O error has occurred.	-1
+Writes a 32 bit int.	-1
+the integer value to be written.	-1
+if I/O errors occur while writing to the underlying stream.	-1
+an instance of the class Putfield that holds the serializable fields.	-1
+Writes buffered primitive data and object fields to stream.	-1
+Reset will disregard the state of any objects already written to the stream.	-1
+The state is reset to be the same as a new ObjectOutputStream.	-1
+The current point in the stream is marked as reset so the corresponding ObjectInputStream will be reset at the same point.	-1
+the String of bytes to be written.	-1
+the char value to be written.	-1
+if I/O errors occur while writing to the underlying stream.	-1
+Note that there is a significant difference between writing a String into the stream as primitive data or as an Object.	-1
+A String instance written by writeObject is written into the stream as a String initially.	-1
+Future writeObject() calls write references to the string into the stream.	-1
+the String to be written.	-1
+if I/O errors occur while writing to the underlying stream.	-1
+Writes a 32 bit float.	-1
+if I/O errors occur while writing to the underlying stream.	-1
+Writes a 64 bit long.	-1
+the long value to be written.	-1
+if I/O errors occur while writing to the underlying stream.	-1
+Writes a boolean.	-1
+the boolean to be written.	-1
+if I/O errors occur while writing to the underlying stream.	-1
+Subclasses may implement this method to allow class data to be stored in the stream.	-1
+This method is called exactly once for each unique class in the stream.	-1
+the class to annotate custom data for.	-1
+The default implementation of this method in ObjectOutputStreamMM does nothing.	-1
+The corresponding method in ObjectInputStreamMM is resolveProxyClassMM .	-1
+the proxy class to annotate custom data for.	-1
+any exception thrown by the underlying OutputStreamMM .	-1
+When enabled, the replaceObject method is called for every object being serialized.	-1
+boolean parameter to enable replacement of objects.	-1
+the previous setting before this method was invoked.	-1
+This method will allow trusted subclasses of ObjectOutputStream to substitute one object for another during serialization.	-1
+The enableReplaceObject method checks that the stream requesting to do replacement can be trusted.	-1
+The first occurrence of each object written into the serialization stream is passed to replaceObject.	-1
+The ObjectOutputStream.writeObject method takes a parameter of type Object (as opposed to type Serializable) to allow for cases where non-serializable objects are replaced by serializable ones.	-1
+All subsequent references to the object will be redirected to the new object.	-1
+This method should return the object to be substituted or the original object.	-1
+Null can be returned as the object to be substituted, but may cause NullReferenceException in classes that contain references to the original object since they may be expecting an object instead of null.	-1
+the object to be replaced.	-1
+the alternate object that replaced the specified one.	-1
+Any exception thrown by the underlying OutputStream.	-1
+Specify stream protocol version to use when writing the stream.	-1
+Every effort will be made to avoid introducing additional backwards incompatibilities; however, sometimes there is no other alternative.	-1
+use ProtocolVersion from java.io.ObjectStreamConstants.	-1
+Writes an 8 bit byte.	-1
+if I/O errors occur while writing to the underlying stream.	-1
+the String of chars to be written.	-1
+Class descriptors are used to identify the classes of objects written to the stream.	-1
+Subclasses of ObjectOutputStream may override this method to customize the way in which class descriptors are written to the serialization stream.	-1
+The corresponding method in ObjectInputStream, readClassDescriptorMM , should then be overridden to reconstitute the class descriptor from its custom stream representation.	-1
+By default, this method writes class descriptors according to the format defined in the Object Serialization specification.	-1
+If this serialization stream is using the old format ( PROTOCOL_VERSION_1MM ), the class descriptor will be written internally in a manner that cannot be overridden or customized.	-1
+class descriptor to write to the stream.	-1
+If an I/O error has occurred.	-1
+the double value to be written.	-1
+Method used by subclasses to override the default writeObject method.	-1
+"The subclass is expected to provide an override method with the modifier ""final""."	-1
+the short value to be written.	-1
+The writeStreamHeader method is provided so subclasses can append or prepend their own header to the stream.	-1
+It writes the magic number and version to the stream.	-1
+if I/O errors occur while writing to the underlying stream.	-1
+"Writes an ""unshared"" object to the ObjectOutputStream."	-1
+This method is identical to writeObject, except that it always writes the given object as a new, unique object in the stream (as opposed to a back-reference pointing to a previously serialized instance).	-1
+Specifically: An object written via writeUnshared is always serialized in the same manner as a newly appearing object (an object that has not been written to the stream yet), regardless of whether or not the object has been written previously.	-1
+In other words, ObjectOutputStream will never generate back-references to object data written by calls to writeUnshared.	-1
+Note that the rules described above only apply to the base-level object written with writeUnshared, and not to any transitively referenced sub-objects in the object graph to be serialized.	-1
+object to write to stream.	-1
+Returns the name of the class described by this descriptor.	-1
+This method returns the name of the class in the format that is used by the getName method.	-1
+a string representing the name of the class.	-1
+Get the field of this class by name.	-1
+the name of the data field to look for.	-1
+Returns list of ObjectStreamFields representing fields operated on by this reflector.	-1
+an array containing an element for each persistent field of this class.	-1
+Removes from the specified map any keys that have been enqueued on the specified reference queue.	-1
+Return the class in the local VM that this version is mapped to.	-1
+Null is returned if there is no corresponding local class.	-1

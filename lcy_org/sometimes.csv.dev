@@ -1,0 +1,105 @@
+The bucket owner has this permission by default and can grant this permission to others.	1
+For characters that are not supported in XML 1.0, you can add this parameter to request that Amazon S3 encode the keys in the response.	1
+You can use prefix with delimiter to roll up numerous objects into a single result under CommonPrefixes.	1
+trueMM if this stream type supports the markMM and resetMM method; falseMM otherwise.	-1
+if an I/O error occurs.	-1
+Writes b.lengthMM bytes to this output stream.	-1
+The writeMM method of FilterOutputStreamMM calls its writeMM method of three arguments with the arguments bMM , 0MM , and b.lengthMM .	-1
+Flushes this output stream and forces any buffered output bytes to be written out to the stream.	-1
+The flushMM method of FilterOutputStreamMM calls the flushMM method of its underlying output stream.	-1
+Creates an InputStreamReader that uses the given charset decoder.	-1
+An InputStream.	-1
+If an I/O error occurs.	-1
+The string sMM can be retrieved later by the getMessage MM method of class java.lang.ThrowableMM .	-1
+String describing the reason for the exception.	-1
+a String naming the invalid class.	-1
+a String describing the reason for the exception.	-1
+null : cause.toString()) (which typically contains the class and detail message of cause).	-1
+(A null value is permitted, and indicates that the cause is nonexistent or unknown.).	-1
+(A null value is permitted, and indicates that the cause is nonexistent or unknown.).	-1
+Returns the current line number.	-1
+If the stream is not of that type, the parser should toss an exception when it fails, which, if it happens within readlimit bytes, allows the outer code to reset the stream and try another parser.	-1
+if an I/O error occurs.	-1
+Returns the number of bytes that can be read from this input stream without blocking.	-1
+Reads up to lenMM bytes of data from this input stream into an array of bytes.	-1
+if an I/O error occurs.	-1
+The value byte is returned as an intMM in the range 0MM to 255MM .	-1
+If no byte is available because the end of the stream has been reached, the value -1MM is returned.	-1
+This method blocks until input data is available, the end of the stream is detected, or an exception is thrown.	-1
+the actual number of bytes skipped.	-1
+if an I/O error occurs.	-1
+The current line number.	-1
+If the stream has not been marked, or if the mark has been invalidated.	-1
+The number of bytes read, or -1 if the end of the stream has already been reached.	-1
+If an I/O error occurs.	-1
+An int specifying the line number.	-1
+a String describing the reason for the exception.	-1
+Objects referenced by this object are read transitively so that a complete equivalent graph of objects is reconstructed by readObject.	-1
+At this point the object validation callbacks are executed in order based on their registered priorities.	-1
+Read the non-static and non-transient fields of the current class from this stream.	-1
+This may only be called from the readObject method of the class being deserialized.	-1
+if an I/O error occurs.	-1
+Closes the input stream.	-1
+If an I/O error has occurred.	-1
+if there are I/O errors while reading from the underlying InputStreamMM .	-1
+the 32 bit integer read.	-1
+the GetFieldMM object representing the persistent fields of the object being deserialized.	-1
+Reads into an array of bytes.	-1
+This method will block until some input is available.	-1
+Consider using java.io.DataInputStream.readFully to read exactly 'length' bytes.	-1
+the actual number of bytes read, -1 is returned when the end of the stream is reached.	-1
+Reads a byte of data.	-1
+This method will block if no input is available.	-1
+If an I/O error has occurred.	-1
+Reads bytes, blocking until all bytes are read.	-1
+Reads a String in modified UTF-8 format.	-1
+Reads a 32 bit float.	-1
+the 32 bit float read.	-1
+Reads a 64 bit double.	-1
+If other I/O error has occurred.	-1
+the 16 bit short read.	-1
+"If enable is true, and there is a security manager installed, this method first calls the security manager's checkPermissionMM method with the SerializablePermission(""enableSubstitution"")MM permission to ensure it's ok to enable the stream to allow objects read from the stream to be replaced."	-1
+If an I/O error has occurred.	-1
+"The subclass is expected to provide an override method with the modifier ""final""."	-1
+Class definition of a serialized object cannot be found.	-1
+The readStreamHeader method is provided to allow subclasses to read and verify their own stream headers.	-1
+If the deserialized object defines a readResolve method and the invocation of that method returns an array, then readUnshared returns a shallow clone of that array; this guarantees that the returned array object is unique and cannot be obtained a second time from an invocation of readObject or readUnshared on the ObjectInputStream, even if the underlying data stream has been manipulated.	-1
+"ObjectInputStream subclasses which override this method can only be constructed in security contexts possessing the ""enableSubclassImplementation"" SerializablePermission; any attempt to instantiate such a subclass without this permission will cause a SecurityException to be thrown."	-1
+if class of an object to deserialize cannot be found.	-1
+Typically, a readObject method will register the object with the stream so that when all of the objects are restored a final set of validations can be performed.	-1
+Within a priority, callbacks are processed in no particular order.	-1
+This method will allow trusted subclasses of ObjectInputStream to substitute one object for another during deserialization.	-1
+Replacing objects is disabled until enableResolveObject is called.	-1
+Every reference to serializable objects is passed to resolveObject.	-1
+The default resolveObject method just returns the same object.	-1
+object to be substituted.	-1
+the substituted object.	-1
+For a given subclass of ObjectInputStreamMM that overrides this method, the annotateProxyClassMM method in the corresponding subclass of ObjectOutputStreamMM must write any data or objects read by this method.	-1
+the list of interface names that were deserialized in the proxy class descriptor.	-1
+if the proxy class or any of the named interfaces could not be found.	-1
+Write the data and fields to the specified ObjectOutput stream, which must be the same stream that produced this PutFieldMM object.	-1
+Flushes the stream.	-1
+This will write any buffered output bytes and flush through to the underlying stream.	-1
+Retrieve the object used to buffer persistent fields to be written to the stream.	-1
+if reset() is invoked while serializing an object.	-1
+Primitive data write of this String in modified UTF-8 format.	-1
+The class name and signature will have already been written to the stream.	-1
+The resolveClass method in the corresponding subclass of ObjectInputStream must read and use any data or objects written by annotateClass.	-1
+Any exception thrown by the underlying OutputStream.	-1
+Subclasses may implement this method to store custom data in the stream along with descriptors for dynamic proxy classes.	-1
+For a given subclass of ObjectOutputStreamMM that overrides this method, the resolveProxyClassMM method in the corresponding subclass of ObjectInputStreamMM must read any data or objects written by annotateProxyClassMM .	-1
+"If enableMM is true, and there is a security manager installed, this method first calls the security manager's checkPermissionMM method with a SerializablePermission(""enableSubstitution"")MM permission to ensure it's ok to enable the stream to do replacement of objects in the stream."	-1
+Subsequent references to the object are replaced by the object returned by the original call to replaceObject.	-1
+To ensure that the private state of objects is not unintentionally exposed, only trusted streams may use replaceObject.	-1
+This routine provides a hook to enable the current version of Serialization to write in a format that is backwards compatible to a previous version of the stream format.	-1
+the byte value to be written.	-1
+Write the specified class descriptor to the ObjectOutputStream.	-1
+Note that this method will only be called if the ObjectOutputStream is not using the old serialization stream format (set by calling ObjectOutputStream's useProtocolVersionMM method).	-1
+This method is called by trusted subclasses of ObjectInputStream that constructed ObjectInputStream using the protected no-arg constructor.	-1
+object to be written to the underlying stream.	-1
+if there are I/O errors while writing to the underlying stream.	-1
+Writes a 16 bit short.	-1
+While writing an object via writeUnshared does not in itself guarantee a unique reference to the object when it is deserialized, it allows a single object to be defined multiple times in a stream, so that multiple calls to readUnshared by the receiver will not conflict.	-1
+if an I/O error occurs during serialization.	-1
+The ObjectStreamField object of the named field or null if there is no such named field.	-1
+The shared/unshared values and Field objects contained by ObjectStreamFields in the list reflect their bindings to locally defined serializable fields.	-1

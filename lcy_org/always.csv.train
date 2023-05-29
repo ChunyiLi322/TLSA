@@ -1,0 +1,477 @@
+The maximum number of arguments is limited by the maximum dimension of a Java array as defined by The Java鈩	-1
+This operation does not return response elements.	1
+If this pathname denotes a directory, then the directory must be empty in order to be deleted.	-1
+See the general contract of the readIntMM method of DataInputMM .	-1
+This implementation of the operation does not return special errors.	1
+Reads bytes from this byte-input stream into the specified byte array, starting at the given offset.	-1
+If the prefix is too long then it will be truncated, but its first three characters will always be preserved.	-1
+if an I/O error occurs.	-1
+This iterated readMM continues until one of the following conditions becomes true: The specified number of characters have been read, The readMM method of the underlying stream returns -1MM , indicating end-of-file, or The readyMM method of the underlying stream returns falseMM , indicating that further input requests would block.	-1
+A convenience method to set the owner's execute permission for this abstract pathname.	-1
+This implementation of the operation does not return response elements.	1
+the actual number of bytes skipped.	-1
+the underlying input stream.	-1
+the stream has been closed and the contained input stream does not support reading after close, or another I/O error occurs.	-1
+an int specifying the initial buffer size.	-1
+The abstract pathname of the parent directory named by this abstract pathname, or nullMM if this pathname does not name a parent.	-1
+A Writer.	-1
+If an I/O error occurred.	-1
+The createTempFile Files.createTempFile method provides an alternative method to create an empty file in the temporary-file directory.	-1
+Skips nMM bytes of input from this input stream.	-1
+if an I/O error occurs.	-1
+String to be written.	-1
+an intMM to be written.	-1
+String decoded from the buffer's contents.	-1
+Otherwise, a name satisfies the filter if and only if the value true results when the accept FilenameFilter.accept(File,聽String) method of the filter is invoked on this abstract pathname and the name of a file or directory in the directory that it denotes.	-1
+Equivalent to new聽File(this.	-1
+if this stream has not been marked or, if the mark has been invalidated, or the stream has been closed by invoking its close method, or an I/O error occurs.	-1
+See the general contract of the readShortMM method of DataInputMM .	-1
+The canonical form of the pathname of a nonexistent file or directory may be different from the canonical form of the same pathname after the file or directory is created.	-1
+Offset from which to start reading characters.	-1
+See the general contract of the readFullyMM method of DataInputMM .	-1
+the buffer size.	-1
+Returns the name of the file or directory denoted by this abstract pathname.	-1
+This console.	-1
+getAbsolutePath )MM .	-1
+See the general contract of the readLineMM method of DataInputMM .	-1
+Bytes for this operation are read from the contained input stream.	-1
+Closing a ByteArrayInputStream has no effect.	-1
+The markSupportedMM method of BufferedInputStreamMM returns trueMM .	-1
+the buffer into which the data is read.	-1
+Thus redundant BufferedReaderMM s will not copy data unnecessarily.	-1
+Set the current marked position in the stream.	-1
+The behavior of this method is the same as that of the list method, except that the strings in the returned array must satisfy the filter.	-1
+The number of arguments is variable and may be zero.	-1
+the number of bytes to write.	-1
+Each file system has a root directory from which all other files in that file system can be reached.	-1
+If a file could not be created.	-1
+The marked position is 0 unless another position was marked or an offset was specified in the constructor.	-1
+the stream has been closed and the contained input stream does not support reading after close, or another I/O error occurs.	-1
+Following the length, each character of the string is output, in sequence, using the modified UTF-8 encoding for the character.	-1
+Flushes this data output stream.	-1
+Therefore if this pathname is absolute then each resulting pathname is absolute; if this pathname is relative then each resulting pathname will be relative to the same directory.	-1
+If there are more arguments than format specifiers, the extra arguments are ignored.	-1
+Each character c in the resulting string is constructed from the corresponding element b in the byte array such that: c == (char)(((hibyte & 0xff) << 8) | (b & 0xff)) .	-1
+This method does not release the buffer, since its contents might still be required.	1
+the detail message.	-1
+the value of the countMM field, which is the number of valid bytes in this output stream.	-1
+Converts input data to a string.	-1
+The number of bytes read is, at most, equal to the length of bMM .	-1
+Creates a CharArrayReader from the specified array of chars.	-1
+The returned number of available bytes is a hint, but not a guarantee, that it is possible to use most or any of these bytes.	-1
+Tests if this input stream supports the markMM and resetMM methods.	-1
+Bytes for this operation are read from the contained input stream.	-1
+the value of the writtenMM field.	-1
+Each string is a file name rather than a complete path.	-1
+If no exception is thrown, the counter writtenMM is incremented by 1MM .	-1
+If this abstract pathname is already absolute, then the pathname string is simply returned as if by the getPath MM method.	-1
+a StringMM value to be written.	-1
+Tells whether this stream is ready to be read.	-1
+This operation does not return special errors.	1
+Locale is not taken into account on lowercasing the pathname string.	-1
+See the general contract of the skipBytesMM method of DataInputMM .	-1
+The parent abstract pathname.	-1
+a Unicode string.	-1
+trueMM if and only if the file or directory denoted by this abstract pathname exists; falseMM otherwise.	-1
+This implementation of the operation does not return response elements.	1
+the output stream to write to.	-1
+The size, in bytes, of the partition or 0L if this abstract pathname does not name a partition.	-1
+Computes a hash code for this abstract pathname.	-1
+This method implements the general contract of the corresponding read read MM method of the MM class.	-1
+This method first converts this pathname to absolute form if necessary, as if by invoking the getAbsolutePath method, and then maps it to its unique form in a system-dependent way.	-1
+A string containing the line read from the console, not including any line-termination characters, or null if an end of stream has been reached.	-1
+Writes a formatted string to this console's output stream using the specified format string and arguments.	-1
+Otherwise this method returns the number of bytes actually read.	-1
+The value returned is count聽- posMM , which is the number of bytes remaining to be read from the input buffer.	-1
+Converts this abstract pathname into a pathname string.	-1
+Tests whether the application can execute the file denoted by this abstract pathname.	-1
+The &鈭╣.eclipse.jdt.core.dom.QualifiedName&& class defines methods that operate on file attributes including file permissions.	-1
+The &鈭╣.eclipse.jdt.core.dom.QualifiedName&& class should be used when more control over the decoding process is required.	-1
+Once these adjustments have been made the name of the new file will be generated by concatenating the prefix, five or more internally-generated characters, and the suffix.	-1
+Many aspects of the behavior of this method are inherently platform-dependent: The rename operation might not be able to move a file from one filesystem to another, it might not be atomic, and it might not succeed if a file with the destination abstract pathname already exists.	-1
+the buffer into which the data is read.	-1
+The set of available filesystem roots is affected by various system-level operations such as the insertion or ejection of removable media and the disconnecting or unmounting of physical or virtual disk drives.	-1
+By default, the bucket is created in the US Standard region.	1
+To arrange for a file created by this method to be deleted automatically, use the deleteOnExit MM method.	-1
+The resulting string uses the separator default name-separator character to separate the names in the name sequence.	-1
+If no exception is thrown, the counter writtenMM is incremented by 4MM .	-1
+Otherwise, the number kMM of bytes read is equal to the smaller of lenMM and count-posMM .	-1
+the stream has been closed and the contained input stream does not support reading after close, or another I/O error occurs.	-1
+Returns an estimate of the number of bytes that can be read (or skipped over) from this input stream without blocking by the next invocation of a method for this input stream.	-1
+Marks the present position in the stream.	-1
+If an I/O error occurs.	-1
+The prefixMM argument must be at least three characters long.	-1
+If the stream has never been marked, or if the mark has been invalidated.	-1
+An abstract pathname denoting a newly-created empty file.	-1
+Each resulting abstract pathname is constructed from this abstract pathname using the File File(File,聽String) constructor.	-1
+trueMM if and only if the abstract pathname exists and the application is allowed to execute the file.	-1
+Returns the canonical pathname string of this abstract pathname.	-1
+When you add this element, you must set its value to true.	1
+if the stream does not support seek, or if this input stream has been closed by invoking its close method, or an I/O error occurs.	-1
+Tests this abstract pathname for equality with the given object.	-1
+Tells whether this stream is ready to be read.	-1
+An invocation of this method of the form file.setExcutable(arg) behaves in exactly the same way as the invocation file.setExecutable(arg, true) .	-1
+This iterated readMM continues until one of the following conditions becomes true: The specified number of bytes have been read, The readMM method of the underlying stream returns -1MM , indicating end-of-file, or The availableMM method of the underlying stream returns zero, indicating that further input requests would block.	-1
+Number of chars to read.	-1
+Currently, the s3:ReducedRedundancyLostObject event is the only event supported for notifications.	1
+a string to be written.	-1
+A different value may be given to this system property when the Java virtual machine is invoked, but programmatic changes to this property are not guaranteed to have any effect upon the temporary directory used by this method.	-1
+if an I/O error occurs.	-1
+a longMM to be written.	-1
+This implementation of the operation does not return special errors.	1
+If no exception is thrown, the counter writtenMM is incremented by 2MM .	-1
+Returns the number of characters that were skipped.	-1
+The array will be empty if the directory is empty.	-1
+the start offset in the destination array bMM .	-1
+The number of bytes actually read is returned as an integer.	-1
+This implementation of the operation does not return response elements.	1
+If an I/O error occurs.	-1
+The new abstract pathname for the named file.	-1
+Subsequent calls to reset() will attempt to reposition the stream to this point.	-1
+The resetMM method of PushbackReaderMM always throws an exception.	1
+Returns the canonical form of this abstract pathname.	-1
+The default temporary-file directory is specified by the system property java.io.tmpdirMM .	-1
+the number of remaining bytes that can be read (or skipped over) from this input stream without blocking.	-1
+The details of the modified UTF-8 representation are exactly the same as for the readUTFMM method of DataInputMM .	-1
+trueMM if and only if the file denoted by this abstract pathname exists and is a directory; falseMM otherwise.	-1
+a data input stream.	-1
+"The suffix string to be used in generating the file's name; may be nullMM , in which case the suffix "".tmp""MM will be used."	-1
+destination to write to.	-1
+This method returns the sum of the number of bytes remaining to be read in the buffer ( count聽- posMM ) and the result of calling the in in .available().	-1
+A buffered character stream is ready if the buffer is not empty, or if the underlying character stream is ready.	-1
+It is likely to be made inaccurate by any external I/O operations including those made on the system outside of this virtual machine.	-1
+See the general contract of the readCharMM method of DataInputMM .	-1
+A character array containing the password or passphrase read from the console, not including any line-termination characters, or null if an end of stream has been reached.	-1
+This is useful for error reporting and to diagnose why a file cannot be deleted.	-1
+A particular Java platform may support zero or more hierarchically-organized file systems.	-1
+Because equality of abstract pathnames is inherently system-dependent, so is the computation of their hash codes.	-1
+If the requested length is at least as large as this stream's buffer, however, then this method will flush the buffer and write the bytes directly to the underlying output stream.	-1
+Creates a DataInputStream that uses the specified underlying InputStream.	-1
+This is just the last name in the pathname's name sequence.	-1
+"and "".."""	-1
+Otherwise this method returns the number of characters actually read.	-1
+Writes an intMM to the underlying output stream as four bytes, high byte first.	-1
+The string sMM may later be retrieved by the getMessage MM method of class java.lang.ThrowableMM .	-1
+The flushMM method of DataOutputStreamMM calls the flushMM method of its underlying output stream.	-1
+if an I/O error occurs.	-1
+Destination buffer.	-1
+Creates a new CharArrayWriter with the specified initial size.	-1
+The returned number of unallocated bytes is a hint, but not a guarantee, that it is possible to use most or any of these bytes.	-1
+Writes a portion of a String.	-1
+On UNIX systems, alphabetic case is significant in comparing pathnames; on Microsoft Windows systems it is not.	-1
+if an I/O error occurs.	-1
+If, however, the buffer is empty, the mark is not valid, and the requested length is at least as large as the buffer, then this method will read characters directly from the underlying stream into the given array.	-1
+if the contained input stream does not support seek, or the stream has been closed and the contained input stream does not support reading after close, or another I/O error occurs.	-1
+Flushes the console and forces any buffered output to be written immediately .	-1
+The bulk read operations read read(char[]) , read read(char[], int, int) and read read(java.nio.CharBuffer) on the returned object will not read in characters beyond the line bound for each invocation, even if the destination buffer has space for more characters.	-1
+Returns the current value of the counter writtenMM , the number of bytes written to this data output stream so far.	-1
+If nMM is negative, then this method does nothing and returns 0MM .	-1
+Note that if this operation fails it may have succeeded in creating some of the necessary parent directories.	-1
+If no exception is thrown, the counter writtenMM is incremented by the total number of bytes written to the output stream.	-1
+If an I/O error occurs.	-1
+If the name sequence is empty then the pathname does not name a parent directory.	-1
+if an I/O error occurs.	-1
+A character array containing the password or passphrase read from the console, not including any line-termination characters, or null if an end of stream has been reached.	-1
+If no exception is thrown, the counter writtenMM is incremented by 1MM .	-1
+Tests whether the application can read the file denoted by this abstract pathname.	-1
+Bytes for this operation are read from the contained input stream.	-1
+Bytes for this operation are read from the contained input stream.	-1
+trueMM if and only if the file denoted by this abstract pathname is hidden according to the conventions of the underlying platform.	-1
+Returns null if this abstract pathname does not denote a directory, or if an I/O error occurs.	-1
+They may be marked at another position within the buffer by this method.	-1
+a booleanMM value to be written.	-1
+Compares two abstract pathnames lexicographically.	-1
+Number of characters to be written.	-1
+The number of unallocated bytes on the partition 0L if the abstract pathname does not name a partition.	-1
+Creates an empty file in the default temporary-file directory, using the given prefix and suffix to generate its name.	-1
+Returns the number of remaining bytes that can be read (or skipped over) from this input stream.	-1
+This forces any buffered output bytes to be written out to the underlying output stream.	-1
+This operation does not return response elements.	1
+Otherwise the parentMM abstract pathname is taken to denote a directory, and the childMM pathname string is taken to denote either a directory or a file.	-1
+if an I/O error occurs.	-1
+This value is the number of bytes actually written out, not the length of the string.	-1
+The number of unallocated bytes is most likely to be accurate immediately after this call.	-1
+Because the stream's input comes from a character array, there is no actual limit; hence this argument is ignored.	-1
+Renames the file denoted by this abstract pathname.	-1
+the maximum limit of bytes that can be read before the mark position becomes invalid.	-1
+Resets the buffer to the marked position.	-1
+If the value of the len parameter is negative then no characters are written.	-1
+The maximum number of arguments is limited by the maximum dimension of a Java array as defined by The Java鈩	-1
+the stream has been closed and the contained input stream does not support reading after close, or another I/O error occurs.	-1
+Invoking this method to delete a file or directory that is already registered for deletion has no effect.	-1
+On Microsoft Windows systems, a file is considered to be hidden if it has been marked as such in the filesystem.	-1
+A Reader.	-1
+If there are more arguments than format specifiers, the extra arguments are ignored.	-1
+Otherwise this pathname is resolved in a system-dependent way.	-1
+trueMM if the named file does not exist and was successfully created; falseMM if the named file already exists.	-1
+The number of bytes actually read is returned as an integer.	-1
+Ordinarily this method stores bytes from the given array into this stream's buffer, flushing the buffer to the underlying output stream as needed.	-1
+The absolute abstract pathname denoting the same file or directory as this abstract pathname.	-1
+Fewer bytes might be skipped if the end of the input stream is reached.	-1
+Writes a character to the buffer.	-1
+See the general contract of the readFloatMM method of DataInputMM .	-1
+Writes a line separator.	-1
+The number of characters read, or -1 if the end of the stream has been reached.	-1
+The check for the existence of the file and the creation of the file if it does not exist are a single operation that is atomic with respect to all other filesystem activities that might affect the file.	-1
+Bytes for this operation are read from the contained input stream.	-1
+if an I/O error occurs.	-1
+Writes a string to the specified DataOutput using modified UTF-8 encoding in a machine-independent manner.	-1
+getCanonicalPath )MM .	-1
+Writes the specified byte (the low eight bits of the argument bMM ) to the underlying output stream.	-1
+Files created by that method may have more restrictive access permissions to files created by this method and so may be more suited to security-sensitive applications.	-1
+If this abstract pathname does not denote a directory, then this method returns null .	-1
+Creates a CharArrayReader from the specified array of chars.	-1
+In no exception is thrown, the counter writtenMM is incremented by 8MM .	-1
+This implementation of the operation does not return response elements.	1
+The &鈭╣.eclipse.jdt.core.dom.QualifiedName&& FileLock facility should be used instead.	-1
+the string.	-1
+This implementation of the operation does not return special errors.	1
+The operation returns response header that are common to most responses.	1
+If executableMM is falseMM and the underlying file system does not implement an excute permission, then the operation will fail.	-1
+After invoking this method the file or directory is guaranteed not to change until it is either deleted or marked to allow write access.	-1
+If the suffix is too long then it too will be truncated, but if it begins with a period character ( '.'MM ) then the period and the first three characters following it will always be preserved.	-1
+The exact form of a file: URI is system-dependent, hence the transformation performed by this constructor is also system-dependent.	-1
+Bytes for this operation are read from the contained input stream.	-1
+Provides a formatted prompt, then reads a single line of text from the console.	-1
+Writes the complete contents of this byte array output stream to the specified output stream argument, as if by calling the output stream's write method using out.write(buf, 0, count)MM .	-1
+The directory in which the file is to be created, or nullMM if the default temporary-file directory is to be used.	-1
+the stream has been closed and the contained input stream does not support reading after close, or another I/O error occurs.	-1
+This implementation of the operation does not return special errors.	1
+Marks the file or directory named by this abstract pathname so that only read operations are allowed.	-1
+See the general contract of the readFullyMM method of DataInputMM .	-1
+If no exception is thrown, the counter writtenMM is incremented by the total number of bytes written to the output stream.	-1
+A format string as described in Format string syntax.	-1
+"The suffixMM argument may be nullMM , in which case the suffix "".tmp""MM will be used."	-1
+See the general contract of the readUnsignedShortMM method of DataInputMM .	-1
+The parent of an abstract pathname consists of the pathname's prefix, if any, and each name in the pathname's name sequence except for the last.	-1
+On UNIX systems, a file is considered to be hidden if its name begins with a period character ( '.'MM ).	-1
+To create the new file, the prefix and the suffix may first be adjusted to fit the limitations of the underlying platform.	-1
+If the name sequence is empty then the pathname does not name a parent directory.	-1
+Writes a shortMM to the underlying output stream as two bytes, high byte first.	-1
+A longMM value representing the time the file was last modified, measured in milliseconds since the epoch (00:00:00 GMT, January 1, 1970), or 0LMM if the file does not exist or if an I/O error occurs.	-1
+The number of characters actually skipped.	-1
+Reads up to lenMM bytes of data into an array of bytes from this input stream.	-1
+Flush the stream.	-1
+If no exception is thrown, the counter writtenMM is incremented by twice the length of sMM .	-1
+trueMM if and only if the file system actually contains a file denoted by this abstract pathname and the application is allowed to write to the file; falseMM otherwise.	-1
+This implementation of the operation does not return special errors.	1
+Offset at which to start storing characters.	-1
+Creates a new byte array output stream, with a buffer capacity of the specified size, in bytes.	-1
+A convenience method to write a formatted string to this console's output stream using the specified format string and arguments.	-1
+On UNIX systems, a relative pathname is made absolute by resolving it against the current user directory.	-1
+The canonical pathname of a file that resides on some other machine and is accessed via a remote-filesystem protocol such as SMB or NFS may or may not begin with one of the roots returned by this method.	-1
+The name of the file or directory denoted by this abstract pathname, or the empty string if this pathname's name sequence is empty.	-1
+The index of the character following the last character in the subsequence.	-1
+Tells whether this stream supports the mark() operation, which it does.	-1
+Maximum number of characters to read.	-1
+Reads a single line of text from the console.	-1
+the total number of bytes read into the buffer, or -1MM if there is no more data because the end of the stream has been reached.	-1
+This implementation of the operation does not return response elements.	1
+Note that the &鈭╣.eclipse.jdt.core.dom.QualifiedName&& class defines the delete delete method to throw an when a file cannot be deleted.	-1
+Returns the length of the file denoted by this abstract pathname.	-1
+Returns a copy of the input data.	-1
+Reads a password or passphrase from the console with echoing disabled.	-1
+Character-array readers are always ready to be read.	-1
+the number of bytes to be skipped.	-1
+This implementation of the operation does not return response elements.	1
+the underlying output stream.	-1
+This implementation of the operation does not return special errors.	1
+The length of the new String is a function of the character set, and hence may not be equal to the size of the buffer.	-1
+Requests that the file or directory denoted by this abstract pathname be deleted when the virtual machine terminates.	-1
+An abstract pathname denoting a newly-created empty file.	-1
+This forces any buffered output bytes to be written out to the stream.	-1
+The array will be empty if the directory is empty or if no names were accepted by the filter.	-1
+Pathnames denoting the directory itself and the directory's parent directory are not included in the result.	-1
+the total number of bytes read into the buffer, or -1MM if there is no more data because the end of the stream has been reached.	-1
+Creates a BufferedInputStreamMM with the specified buffer size, and saves its argument, the input stream inMM , for later use.	-1
+Creates a new buffered output stream to write data to the specified underlying output stream.	-1
+Creates a buffering character-input stream that uses an input buffer of the specified size.	-1
+Thus, for example, File objects denoting the root directories of the mapped network drives of a Windows platform will be returned by this method, while File objects containing UNC pathnames will not be returned by this method.	-1
+The value trueMM is written out as the value (byte)1MM ; the value falseMM is written out as the value (byte)0MM .	-1
+the byte to be written.	-1
+The initial value of posMM is 0MM and the initial value of countMM is the length of bufMM .	-1
+The return value is unspecified if this pathname denotes a directory.	-1
+if the first byte cannot be read for any reason other than end of file, the stream has been closed and the underlying input stream does not support reading after close, or another I/O error occurs.	-1
+Writes a booleanMM to the underlying output stream as a 1-byte value.	-1
+the high byte of each resulting Unicode character.	-1
+} For simple applications requiring only line-oriented reading, use readLine .	-1
+If no exception is thrown, the counter writtenMM is incremented by the length of sMM .	-1
+The number of unallocated bytes is most likely to be accurate immediately after this call.	-1
+the number of bytes read, or -1MM if the end of the stream has been reached.	-1
+If there are more arguments than format specifiers, the extra arguments are ignored.	-1
+Appends a subsequence of the specified character sequence to this writer.	-1
+Writes lenMM bytes from the specified byte array starting at offset offMM to the underlying output stream.	-1
+The behavior of this method is the same as that of the listFiles method, except that the pathnames in the returned array must satisfy the filter.	-1
+The exact definition of hidden is system-dependent.	-1
+Each character is written to the data output stream as if by the writeCharMM method.	-1
+Skips characters.	-1
+This implementation of the operation does not return special errors.	1
+the next four bytes of this input stream, interpreted as a floatMM .	-1
+Returns the size of the partition named by this abstract pathname.	-1
+Tells whether this stream supports the mark() operation, which it does.	-1
+The buffer array is not copied.	-1
+the stream has been closed and the contained input stream does not support reading after close, or another I/O error occurs.	-1
+if this input stream has been closed by invoking its close method, or an I/O error occurs.	-1
+if the first byte cannot be read for any reason other than end of file, the stream has been closed and the underlying input stream does not support reading after close, or another I/O error occurs.	-1
+The number of bytes read is, at most, equal to lenMM .	-1
+the next byte of data, or -1MM if the end of the stream has been reached.	-1
+The operation returns response header that are common to most responses.	1
+if an I/O error occurs.	-1
+the number of bytes to read.	-1
+This readMM method cannot block.	-1
+If parentMM is nullMM then the new FileMM instance is created as if by invoking the single-argument FileMM constructor on the given childMM pathname string.	-1
+A line bound is considered to be any one of a line feed ('\n'), a carriage return ('\r'), a carriage return followed immediately by a linefeed, or an end of stream.	-1
+This writer.	-1
+getAbsoluteFile getAbsoluteFile ()) so long as the original abstract pathname, the URI, and the new abstract pathname are all created in (possibly different invocations of) the same Java virtual machine.	-1
+Creates a new empty file in the specified directory, using the given prefix and suffix strings to generate its name.	-1
+"The suffix string to be used in generating the file's name; may be nullMM , in which case the suffix "".tmp""MM will be used."	-1
+the underlying input stream.	-1
+This implementation of the operation does not return special errors.	1
+Creates ByteArrayInputStreamMM that uses bufMM as its buffer array.	-1
+the actual number of bytes skipped.	-1
+The absolute pathname string denoting the same file or directory as this abstract pathname.	-1
+The length, in bytes, of the file denoted by this abstract pathname, or 0LMM if the file does not exist.	-1
+This operation does not return special errors.	1
+See the general contract of the resetMM method of InputStreamMM .	-1
+This operation does not return response elements.	1
+If a security manager exists and its checkRead method denies read access to a particular root directory, then that directory will not appear in the result.	-1
+This method makes no guarantee that write operations to this file system will succeed.	-1
+Arguments referenced by the format specifiers in the format string.	-1
+Where it is required to distinguish an I/O exception from the case that the file is not a normal file, or where several attributes of the same file are required at the same time, then the readAttributes Files.readAttributes method may be used.	-1
+Tests whether the file named by this abstract pathname is a hidden file.	-1
+This method makes no guarantee that write operations to this file system will succeed.	-1
+The canonical pathname string denoting the same file or directory as this abstract pathname.	-1
+Returns an array of strings naming the files and directories in the directory denoted by this abstract pathname that satisfy the specified filter.	-1
+The markMM for class PushbackReaderMM always throws an exception.	1
+Writes lenMM bytes from the specified byte array starting at offset offMM to this buffered output stream.	-1
+Your objects never expire, and Amazon S3 no longer automatically deletes any objects on the basis of rules contained in the deleted lifecycle configuration.	1
+Closing a previously closed stream has no effect.	-1
+the offset in the buffer of the first byte to read.	-1
+Creates a new byte array output stream.	-1
+Closes this input stream and releases any system resources associated with the stream.	-1
+the current contents of the output stream, as a string.	-1
+Bytes for this operation are read from the contained input stream.	-1
+the stream has been closed and the contained input stream does not support reading after close, or another I/O error occurs.	-1
+Let k be the number of bytes actually read; these bytes will be stored in elements b[off]MM through b[off+MM k -1]MM , leaving elements b[off+MM k ]MM through b[off+len-1]MM unaffected.	-1
+On Microsoft Windows systems, the hash code is equal to the exclusive or of the hash code of its pathname string converted to lower case and the decimal value 1234321MM .	-1
+Names denoting the directory itself and the directory's parent directory are not included in the result.	-1
+Its size is the current size of the output stream and the valid contents of the buffer have been copied into it.	-1
+Writes a string to the underlying output stream as a sequence of characters.	-1
+Note: this method should not be used for file-locking, as the resulting protocol cannot be made to work reliably.	-1
+Arguments referenced by the format specifiers in the format string.	-1
+This operation does not return response elements.	1
+A file filter.	-1
+If an I/O error occurs.	-1
+Reads a line of text.	-1
+trueMM if and only if the renaming succeeded; falseMM otherwise.	-1
+There is no guarantee that the name strings in the resulting array will appear in any specific order; they are not, in particular, guaranteed to appear in alphabetical order.	-1
+The number of characters actually skipped.	-1
+Bytes for this operation are read from the contained input stream.	-1
+if an I/O error occurs.	-1
+See the general contract of the readDoubleMM method of DataInputMM .	-1
+the booleanMM value read.	-1
+In every case, elements b[0]MM through b[off]MM and elements b[off+len]MM through b[b.length-1]MM are unaffected.	-1
+trueMM if and only if the operation succeeded.	-1
+If an I/O error occurs.	-1
+Bytes for this operation are read from the contained input stream.	-1
+Whether or not a read-only file or directory may be deleted depends upon the underlying system.	-1
+the next two bytes of this input stream, interpreted as an unsigned 16-bit integer.	-1
+A Reader.	-1
+if an I/O error occurs.	-1
+See the general contract of the markMM method of InputStreamMM .	-1
+This implementation of the operation does not return response elements.	1
+Deletes the file or directory denoted by this abstract pathname.	-1
+Returns the absolute form of this abstract pathname.	-1
+This writer.	-1
+Arguments referenced by the format specifiers in the format string.	-1
+Input buffer (not copied).	-1
+Ordinarily this method takes characters from this stream's character buffer, filling it from the underlying stream as necessary.	-1
+This implementation of the operation does not return response elements.	1
+trueMM if and only if the file denoted by this abstract pathname exists and is a normal file; falseMM otherwise.	-1
+The return value should always be checked to make sure that the rename operation was successful.	-1
+the next two bytes of this input stream, interpreted as a charMM .	-1
+The behaviour on a null argument depends on the conversion.	-1
+Following the length, each character of the string is output, in sequence, using the modified UTF-8 encoding for the character.	-1
+This implementation of the operation does not return special errors.	1
+a shortMM to be written.	-1
+It is guaranteed that the canonical pathname of any file physically present on the local machine will begin with one of the roots returned by this method.	-1
+the specified input stream.	-1
+Every pathname that denotes a nonexistent file or directory also has a unique canonical form.	-1
+If an I/O error occurs, which is possible because the construction of the canonical pathname may require filesystem queries.	-1
+The next invocation might be the same thread or another thread.	-1
+Creates a newly allocated byte array.	-1
+If lenMM is zero, then no bytes are read and 0MM is returned; otherwise, there is an attempt to read at least one byte.	-1
+"Windows platforms, for example, have a root directory for each active drive; UNIX platforms have a single root directory, namely ""/"" ."	-1
+The printwriter associated with this console.	-1
+All objects added to the bucket receive the version ID null.	1
+Invoking this method is equivalent to invoking createTempFile createTempFile(prefix,聽suffix,聽null) MM .	-1
+if an I/O error occurs.	-1
+if an I/O error occurs.	-1
+the stream has been closed and the contained input stream does not support reading after close, or another I/O error occurs.	-1
+This method blocks until input data is available, end of file is detected, or an exception is thrown.	-1
+from the pathname, resolving symbolic links (on UNIX platforms), and converting drive letters to a standard case (on Microsoft Windows platforms).	-1
+the number of bytes to write.	-1
+Arguments referenced by the format specifiers in the format string.	-1
+Creates the directory named by this abstract pathname.	-1
+Flushes this buffered output stream.	-1
+This implementation of the operation does not return special errors.	1
+the number of bytes to write.	-1
+If an I/O error occurs.	-1
+If an I/O error occurs.	-1
+Implements the writeMM method of OutputStreamMM .	-1
+Once deletion has been requested, it is not possible to cancel the request.	1
+See the general contract of the readByteMM method of DataInputMM .	-1
+Atomically creates a new, empty file named by this abstract pathname if and only if a file with this name does not yet exist.	-1
+the initial size.	-1
+the maximum number of bytes read.	-1
+ByteArrayInputStream objects are marked at position zero by default when constructed.	-1
+Otherwise an array of File objects is returned, one for each file or directory in the directory.	-1
+If this abstract pathname does not denote a directory, then this method returns null .	-1
+the stream has been closed and the contained input stream does not support reading after close, or another I/O error occurs.	-1
+This implementation of the operation does not return special errors.	1
+a Unicode string.	-1
+An array of File objects denoting the available filesystem roots, or null if the set of roots could not be determined.	-1
+if an I/O error occurs.	-1
+The value kMM is added into posMM and kMM is returned.	-1
+The nMM parameter may be negative, even though the skipMM method of the superclass throws an exception in this case.	-1
+the stream has been closed and the contained input stream does not support reading after close, or another I/O error occurs.	-1
+the buffer into which the data is read.	-1
+trueMM if and only if the directory was created, along with all necessary parent directories; falseMM otherwise.	-1
+a charMM value to be written.	-1
+This method blocks until input data is available, end of file is detected, or an exception is thrown.	-1
+The methods in this class can be called after the stream has been closed without generating an IOException.	-1
+Closing a ByteArrayOutputStream has no effect.	-1
+Where it is required to distinguish an I/O exception from the case that 0L is returned, or where several attributes of the same file are required at the same time, then the readAttributes Files.readAttributes method may be used.	-1
+Offset from which to start reading characters.	-1
+the current contents of this output stream, as a byte array.	-1
+This provides a detailed message.	-1
+Resets the stream to the most recent mark, or to the beginning if it has never been marked.	-1
+Reads up to lenMM bytes of data from the contained input stream into an array of bytes.	-1
+Each character in the string is written out, in sequence, by discarding its high eight bits.	-1
+This implementation of the operation does not return special errors.	1
+Skips characters.	-1
+Note that the &鈭╣.eclipse.jdt.core.dom.QualifiedName&& class defines the newDirectoryStream newDirectoryStream method to open a directory and iterate over the names of the files in the directory.	-1
+The buffer capacity is initially 32 bytes, though its size increases if necessary.	-1
+See the general contract of the readUnsignedByteMM method of DataInputMM .	-1
+Let kMM be the number of bytes actually read; these bytes will be stored in elements b[0]MM through b[k-1]MM , leaving elements b[k]MM through b[b.length-1]MM unaffected.	-1
+This implementation of the operation does not return special errors.	1
+A line is considered to be terminated by any one of a line feed ('\n'), a carriage return ('\r'), or a carriage return followed immediately by a linefeed.	-1
+This will be at least two plus the length of strMM , and at most two plus thrice the length of strMM .	-1
+An array of abstract pathnames denoting the files and directories in the directory denoted by this abstract pathname.	-1
+This will be at least two plus the length of strMM , and at most two plus thrice the length of strMM .	-1
+This implementation of the operation does not return response elements.	1
+Retrieves the unique &鈭╣.eclipse.jdt.core.dom.QualifiedName&& Reader object associated with this console.	-1
+If the pathname of a remote file is syntactically indistinguishable from the pathname of a local file then it will begin with one of the roots returned by this method.	-1
+This may use less resources when working with very large directories.	-1
+If kMM is positive, then bytes buf[pos]MM through buf[pos+k-1]MM are copied into b[off]MM through b[off+k-1]MM in the manner performed by System.arraycopyMM .	-1
+A format string as described in Format string syntax for the prompt text.	-1
+When possible, this method checks for write permissions and other operating system restrictions and will therefore usually provide a more accurate estimate of how much new data can actually be written than getFreeSpace .	-1
+A single read or skip of this many bytes will not block, but may read or skip fewer bytes.	-1
+Resets the countMM field of this byte array output stream to zero, so that all currently accumulated output in the output stream is discarded.	-1
+the stream has been closed and the contained input stream does not support reading after close, or another I/O error occurs.	-1
+To redirect request for all pages with the prefix docs/, the key prefix will be /docs, which identifies all objects in the docs/ folder.	1
+This provides no detailed message.	-1
+Returns an array of abstract pathnames denoting the files and directories in the directory denoted by this abstract pathname that satisfy the specified filter.	-1
+If no exception is thrown, the counter writtenMM is incremented by 2MM .	-1
+An array of strings naming the files and directories in the directory denoted by this abstract pathname.	-1
+Destination buffer.	-1

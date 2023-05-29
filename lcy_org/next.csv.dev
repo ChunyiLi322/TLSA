@@ -1,0 +1,54 @@
+Reads some number of bytes from the contained input stream and stores them into the buffer array bMM .	1
+Converts the float argument to an intMM using the floatToIntBitsMM method in class FloatMM , and then writes that intMM value to the underlying output stream as a 4-byte quantity, high byte first.	1
+The resetMM method of LineNumberInputStreamMM resets the line number to be the line number at the time the markMM method was called, and then calls the resetMM method of the underlying input stream.	1
+Converts the double argument to a longMM using the doubleToLongBitsMM method in class DoubleMM , and then writes that longMM value to the file as an eight-byte quantity, high byte first.	1
+If it fails to read any characters because the substream has reached the end of the stream, it calls the closeMM method of the current substream and begins reading from the next substream.	1
+Typical clients of this class first set up the syntax tables and then sit in a loop calling nextToken to parse successive tokens until TT_EOF is returned.	1
+When adding a new object, you can grant permissions to individual AWS accounts or predefined Amazon S3 groups.	1
+Only after you either complete or abort multipart upload, Amazon S3 frees up the parts storage and stops charging you for the parts storage.	1
+You first initiate the multipart upload and then upload all parts using the Upload Parts operation (see Upload Part).	1
+This may be used when finer manipulation of file permissions is required.	-1
+If the underlying file system can not distinguish the owner's execute permission from that of others, then the permission will apply to everybody, regardless of this value.	-1
+trueMM if and only if the operation succeeded.	-1
+All platforms support file-modification times to the nearest second, but some provide more precision.	-1
+trueMM if and only if the operation succeeded; falseMM otherwise.	-1
+trueMM if and only if the operation succeeded.	-1
+The &鈭╣.eclipse.jdt.core.dom.QualifiedName&& class defines methods that operate on file attributes including file permissions.	-1
+trueMM if and only if the operation succeeded.	-1
+getPath getPath (this.	-1
+For a given abstract pathname f, it is guaranteed that new File File (聽f.toURI()).equals(聽f.	-1
+Due to the system-dependent nature of abstract pathnames, however, this relationship typically does not hold when a file: URI that is created in a virtual machine on one operating system is converted into an abstract pathname in a virtual machine on a different operating system.	-1
+Note that when this abstract pathname represents a UNC pathname then all components of the UNC (including the server name component) are encoded in the URI path.	-1
+The authority component is undefined, meaning that it is represented as null .	-1
+The class defines the toUri toUri method to encode the server name in the authority component of the resulting URI .	-1
+Converts this abstract pathname into a file:MM URL.	-1
+Force all system buffers to synchronize with the underlying device.	-1
+Creates a FileInputStreamMM by using the file descriptor fdObjMM , which represents an existing connection to an actual file in the file system.	-1
+This constructor does not throw an exception if fdObjMM is valid invalid .	-1
+the file descriptor to be opened for reading.	-1
+if an I/O error occurs.	-1
+Changing the channel's position, either explicitly or by reading, will change this stream's file position.	-1
+the file descriptor object associated with this stream.	-1
+This method blocks if no input is yet available.	-1
+the next byte of data, or -1MM if the end of the file is reached.	-1
+the buffer into which the data is read.	-1
+Reads up to lenMM bytes of data from this input stream into an array of bytes.	-1
+the actual number of bytes skipped.	-1
+Constructs a FileNotFoundExceptionMM with the specified detail message.	-1
+Creates a file output stream to write to the specified file descriptor, which represents an existing connection to an actual file in the file system.	-1
+if an I/O error occurs.	-1
+if an I/O error occurs.	-1
+the start offset in the data.	-1
+the object we are testing for equality with this object.	-1
+the FileDescriptor to read from.	-1
+If the second argument is trueMM , then bytes will be written to the end of the file rather than the beginning.	-1
+if trueMM , then bytes will be written to the end of the file rather than the beginning.	-1
+if an I/O error occurs.	-1
+Stream marks are intended to be used in situations where you need to read ahead a little to see what's in the stream.	-1
+Often this is most easily done by invoking some general parser.	-1
+If the stream is not of that type, the parser should toss an exception when it fails.	-1
+the maximum number of bytes read.	-1
+if an I/O error occurs.	-1
+If no byte is available because the end of the stream has been reached, the value -1MM is returned.	-1
+if an I/O error occurs.	-1
+The actual number of bytes skipped is returned.	-1
