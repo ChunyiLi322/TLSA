@@ -10,3 +10,16 @@ pip install -r requirements.txt
 * All the parameters are defined in `config.ini`.
 * `configparser` is used to parse the parameters.
 
+
+* Install the required packages by:
+```
+python data.py
+```
+```
+python word2vec.py
+```
+
+```
+python main.py
+```
+
