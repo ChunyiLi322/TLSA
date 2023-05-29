@@ -11,7 +11,7 @@ pip install -r requirements.txt
 * `configparser` is used to parse the parameters.
 
 
-* Install the required packages by:
+* run by:
 ```
 python data.py
 ```
@@ -22,4 +22,7 @@ python word2vec.py
 ```
 python main.py
 ```
-
+* feature extraction:
+```
+python feature_extr.py
+```
